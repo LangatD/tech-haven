@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(118, 14, 187, 0.226);
+}
+
+.contact-logo{
+    margin-left: 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.contact-logo a{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    text-decoration: none;
+    align-items: center;
+    font-size: 25px;
+}
+
+.contact-logo img{
+    width: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.contact-logo button{
+    border: none;
+    background-color: rgba(118, 14, 187, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    margin-inline: 10rem;
+    border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+    margin-bottom: 45px;
+}
+
+.contact-about{
+    padding: 25px;
+    background-color: rgba(116, 5, 131, 1);
+    color: rgba(230, 230, 230, 1);
+    width: 40%;
+}
+
+.contact-about p:nth-of-type(1){
+    max-width: 450px;
+    word-wrap: break-word;
+}
+
+.whatsapp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.phone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.follow{
+    margin-top: 20px;
+}
+
+.follow a{
+    color: rgba(230, 230, 230, 1);
+    text-decoration: none;
+}
+
+.follow h2{
+    text-align: center;
+}
+
+.follow-i{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.fb-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fb-about i {
+    color: rgba(78, 133, 236, 1);
+}
+
+.messenger-about a{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.messenger-about i{
+    color: rgba(78, 133, 236, 1);
+}
+
+.ig-about a{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.ig-about i{
+    color: rgba(200, 30, 30, 1);
+}
+
+.discord-about a{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.discord-about i{
+    color: rgba(23, 120, 247, 1);
+}
+
+.linkedin-about a{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.linkedin-about i{
+    color: rgba(23, 120, 247, 1);
+}
+
+
+.telegram-about a{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.telegram-about i{
+    color: rgba(23, 120, 247, 1);
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 40px;
+}
+
+.st-contact-div{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.username-contact-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.phone-contact-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nd-contact-div{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.email-contact-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.course-contact-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.issue-contact-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.issue-contact-div textarea{
+    min-height: 150px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.sendBtn{
+    height: 30px;
+    background-color: rgba(116, 5, 131, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    border: none;
+}
+
+.contact-form input:focus{
+    outline: none;
+}
+
+.contact-form textarea:focus{
+    outline: none;
+}

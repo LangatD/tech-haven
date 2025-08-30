@@ -1,0 +1,104 @@
+body{
+  margin: 0;
+  overflow: hidden;
+  background-color:  rgba(122, 58, 141, 0.425);
+  color: rgba(255, 255, 255, .9);
+}
+
+.wrap{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  height: 95vh;
+  margin-top: 30px;
+}
+
+.heading a{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.logo-login{
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.login-back{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+  border: 1px solid rgba(161, 32, 247, 0.4);
+  padding-inline: 100px;
+  border-radius: 10px;
+  background-color: rgba(138, 12, 155, 0.3) ;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.904);
+}
+
+form input{
+  background-color: rgba(255, 255, 255, 0.658);
+  border: none;
+  outline: none;
+}
+
+form i{
+  color: rgba(255, 255, 255, .4);
+}
+
+form h5{
+  font-size: 25px;
+}
+
+.u-name{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:10px;
+}
+
+.p-word{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:10px;
+}
+
+.log-be-submit{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  font-size: 15px;
+  padding-inline: 0;
+}
+
+.log-be-submit a{
+  color: white;
+  text-decoration: none;
+  margin-left: auto;
+}
+
+.log-submit button{
+  width: 100%;
+  height: 30px;
+  font-size: 23px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+}
