@@ -1,0 +1,261 @@
+body{
+    margin:0;
+    background-color: rgba(151, 84, 172, 0.06);
+    font-family: sans-serif;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin-left: 0;
+    align-items: center;
+    background-color: rgba(230, 230, 230, 1);
+    padding-inline: 15px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    box-shadow: 0 0 10px rgba(230, 230, 230, 1);
+}
+
+.header a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header a{
+    text-decoration: none;
+}
+
+.header a img{
+    width: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.header a p{
+    font-size: 25px;
+}
+
+.header button{
+    border: none;
+    background-color: rgba(55, 11, 99, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.content{
+    margin: 30px;
+    background-color: rgba(151, 84, 172, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.content1-left-top h1{
+    font-size: 35px;
+    color: rgba(107, 62, 167,1);
+}
+
+.content1-left-top p{
+    font-size: 25px;
+}
+
+.bottom-p{
+    display: flex;
+    align-self: center;
+    gap: 10px;
+    align-items: center;
+    font-size: 25px;
+}
+
+.bottom-p i{
+    font-size: 30px;
+    color: rgba(100, 40, 180, 1);
+}
+
+.content1-right{
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.content1-right button{
+    height: 30px;
+    background-color: rgba(55, 11, 99, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.content2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content2 h5{
+    font-size: 16px;
+}
+
+.content2-row1-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content2-row1-main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(180, 180, 180, 1);
+    padding-inline: 20px;
+    border-radius: 5px ;
+    height: 130px;
+}
+
+.row1-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.row1-bottom p{
+    background-color: rgba(200, 200, 200, .5);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.content2-row2-main{
+    border:1px solid rgba(180, 180, 180, 1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding-inline: 20px;
+}
+
+.row2-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.row2-bottom p{
+    background-color: rgba(200, 200, 200, .5);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.content2-row2-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content2-row3-main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(180, 180, 180, 1);
+    padding-inline: 28px;
+    border-radius: 5px;
+    height: 130px;
+}
+
+.row3-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.row3-bottom p{
+    background-color: rgba(180, 180, 180, .5);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.content2-row4-main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(180, 180, 180, 1);
+    border-radius: 5px;
+    padding-inline: 17px;
+}
+
+.row4-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.row4-bottom p{
+    background-color: rgba(180, 180, 180, .5);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.content2-row3-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.content2-row5-main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(180, 180, 180, 1);
+    border-radius: 5px;
+    padding-inline: 25px;
+    height: 130px;
+}
+
+.row5-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+}
+
+.row5-bottom p{
+    background-color: rgba(180, 180, 180, .5);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.content2-row6-main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(180, 180, 180, 1);
+    border-radius: 5px;
+    padding-inline: 12px;
+}
+
+.row6-bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.row6-bottom p{
+    background-color: rgba(180, 180, 180, .5);
+    border-radius: 5px;
+    padding: 2px;
+}
