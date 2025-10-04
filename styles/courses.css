@@ -259,3 +259,108 @@ body{
     border-radius: 5px;
     padding: 2px;
 }
+
+.content3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+
+.content3-left{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 30px;
+    border-radius: 10px;
+    width:200px;
+    box-shadow: 0 0 10px rgba(107, 62, 167,1);
+}
+
+.content3-mid{
+    background-color: rgba(255, 255, 255, 1);
+    padding: 30px;
+    border-radius: 10px;
+    width:250px;
+    box-shadow: 0 0 10px rgba(107, 62, 167,1);
+}
+
+.content3-right{
+    background-color: rgba(255, 255, 255, 1);
+    padding: 30px;
+    border-radius: 10px;
+    width:230px;
+    box-shadow: 0 0 10px rgba(107, 62, 167,1);
+}
+
+.content4{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.FAQ1 {
+  position: relative;
+  max-width: 50rem;
+  min-width: 30rem;
+  height: 50px;
+  background-color: lightgray;
+  color: black;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.FAQ1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 90px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: purple;
+  /*border-radius: 50%;*/
+  transition: all 2s ease; 
+  z-index: 0;
+}
+
+
+.FAQ1 p {
+  position: relative;
+  z-index: 1;
+  transition: color 2s ease;
+}
+
+
+.FAQ1:hover::before {
+  width: 1200px;
+  height: 1200px;
+  border-radius: 50%;
+  top: -600px; 
+  right: -100px;
+}
+
+
+.FAQ1:hover p {
+  color: rgba(255, 255, 255, 1);
+}
+
+footer{
+    margin-top: 13rem;
+    background-color: rgba(62, 17, 114, 1);
+    margin-bottom: 0;
+    height: 50px;
+    padding: 30px;
+    color: rgba(200, 200, 200, 1);
+    font-size: 15px;
+}

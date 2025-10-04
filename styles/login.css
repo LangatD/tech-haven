@@ -31,10 +31,11 @@ body{
   border-radius: 50%;
 }
 
-form{
+form1{
   display: flex;
   flex-direction: column;
   margin-top: 0;
+  align-items: center;
 }
 
 .login-back{
@@ -67,16 +68,38 @@ form h5{
 
 .u-name{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+}
+
+.u-name1{
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  gap:10px;
+  gap: 10px;
+}
+
+.user-errormessage{
+  display: none;
 }
 
 .p-word{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+}
+
+.p-word1{
+  display: flex;
   flex-direction: row;
   justify-content: center;
-  gap:10px;
+  gap: 10px;
+}
+
+.pass-errormessage{
+  display: none;
 }
 
 .log-be-submit{
@@ -101,4 +124,61 @@ form h5{
   font-weight: bold;
   border-radius: 10px;
   border: none;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  background-color: rgba(122, 58, 141, 0.425);
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(138, 12, 155, 0.815);
+}
+
+.form input{
+  height: 20px;
+  outline: none;
+}
+
+.username-RT{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.email-RT{
+  display: flex;
+  flex-direction: column;
+}
+
+#resetBtn{
+  height: 30px;
+  border: none;
+  background-color: rgb(169, 15, 207);
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+#password{
+  position: relative;
+}
+
+.bx-eye-closed{
+  position: absolute;
+  transform: translateX(120px);
+  color: rgba(100, 100, 100, 1);
+}
+
+.bx-eye{
+  position: absolute;
+  transform: translateX(120px);
+  color: rgba(100, 100, 100, 1);
 }
