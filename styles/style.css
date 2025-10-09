@@ -245,12 +245,12 @@ body{
 
 .dropdown-content a:nth-of-type(1){
     border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-top-right-radius: 0;
 }
 
 .dropdown-content a:nth-last-of-type(1){
     border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 0;
 }
 
 .dropdown-content a:hover {
