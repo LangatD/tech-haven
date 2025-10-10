@@ -29,12 +29,23 @@ body{
     text-decoration: none;
 }
 
-.welcome-1stchild .with-i i{
-    vertical-align: middle;
+.welcome-1stchild .with-i{
+    font-size: 17px; 
+    i{
+        vertical-align: middle;
+        font-size: 20px;
+    }
 }
 
-.welcome-1stchild i{
-    color:blueviolet;
+.welcome-1stchild{
+    width: 60%;
+    p:nth-last-of-type(1){
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    i{
+        color:blueviolet;
+    }
 }
 
 .nd-nav{
@@ -111,13 +122,13 @@ body{
 .welcome{
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: 60px;
     margin-inline: 20px;
     padding: 20px;
 }
 
 .par-welcome{
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .stud-img{
@@ -301,8 +312,8 @@ body{
 }
 
 .reviews-img{
-    width: 25%;
-    height: 60%;
+    width: 30%;
+    height: 100%;
     clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
 }
 
@@ -315,6 +326,9 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    h2{
+        font-size: 40px;
+    }
 }
 
 .reason-1{
@@ -327,6 +341,11 @@ body{
     /*background-color:  rgba(124, 12, 189, .3);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 1);*/
+    div{
+        p{
+            font-size: 22px;
+        }
+    }
 }
 
 .reason-2{
@@ -339,6 +358,11 @@ body{
     /*background-color:  rgba(124, 12, 189, .3);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 1);*/
+    div{
+        p{
+            font-size: 22px;
+        }
+    }
 }
 
 .reason-3{
@@ -351,6 +375,11 @@ body{
     /*background-color:  rgba(124, 12, 189, .3);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 1);*/
+    div{
+        p{
+            font-size: 22px;
+        }
+    }
 }
 
 .reason-4{
@@ -363,18 +392,11 @@ body{
     /*background-color:  rgba(124, 12, 189, .3);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 1);*/
-}
-
-.reason-5{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    gap:50px;
-    padding: 25px;
-    font-size: 25px;
-    /*background-color:  rgba(124, 12, 189, .3);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 1);*/
+    div{
+        p{
+            font-size: 22px;
+        }
+    }
 }
 
 .whys{
@@ -401,11 +423,21 @@ body{
     margin-top: 70px;
 }
 
-.why-1, .why-2, .why-3, .why-4 {
+.why-1, .why-2, .why-3, .why-4, .why-5{
     background-color: rgba(255, 255, 255, 1);
     border-radius: 20px;
-    padding: 25px;
+    padding-inline: 10px;
+    padding-top: 0;
     box-shadow: 0 5px 5px rgba(5, 5, 5, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h6{
+        font-size: 15px;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
 }
 
 .rev-1-img{
@@ -417,7 +449,8 @@ body{
 .kids-reviews-parent{
     display: flex;
     flex-direction: column;
-    background-color: rgba(206, 40, 248, 0.185);
+    background-color: rgba(255, 255, 255, .3);
+    /*background-color: rgba(206, 40, 248, 0.185);*/
     margin: 30px;
     border-radius: 10px;
     margin-top: 80px;
@@ -441,33 +474,33 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    border: 1px solid rgba(154, 32, 170, 0.9);
+    width: 500px;
+    border: none;
     padding-inline: 20px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, .6);
-    height: 380px;
-    width: 300px;
+    background-color: rgba(255, 255, 255, 0.432);
+    box-shadow: inset 10px 10px 10px rgba(209, 118, 235, 0.856), inset -10px -10px 10px rgb(255, 255, 255);
+    height: 300px;
 }
 
 .rev-1 p{
     text-align: center;
+    font-size: 17px;
 }
 
 .rev-2 p{
     text-align: center;
+    font-size: 17px;
 }
 
 .rev-3 p{
     text-align: center;
+    font-size: 17px;
 }
 
 .rev-4 p{
     text-align: center;
-}
-
-.rev-1 p:nth-child(2){
-    text-align: center;
+    font-size: 17px;
 }
 
 .faq{
@@ -476,52 +509,64 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    h5{
+        font-size: 30px;
+    }
 }
 
 .faq-1, .faq-2, .faq-3, .faq-4, .faq-5, .faq-6, .faq-7, .faq-8, .faq-9{
     display: flex;
+    flex-direction: column;
+    margin-inline: 5%;
+    min-width: 60%;
+    padding: 10px;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+}
+.quiz-1, .quiz-2, .quiz-3, .quiz-4, .quiz-5, .quiz-6, .quiz-7, .quiz-8, .quiz-9{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
-    margin-top: 10px;
-    padding-bottom: 10px;
     align-items: center;
-    gap: 20px;
-    font-weight: large;
+}
+.ans-1, .ans-2, .ans-3, .ans-3, .ans-4, .ans-5, .ans-6, .ans-7, .ans-8, .ans-9{
+    font-size: 20px;
+    display: none;;
 }
 
-.faq-1:hover{
+.quiz-1:hover{
     color: rgb(225, 0, 255);
 }
 
-.faq-2:hover{
+.quiz-2:hover{
     color: rgb(225, 0, 255);
 }
 
-.faq-3:hover{
+.quiz-3:hover{
     color: rgb(225, 0, 255);
 }
 
-.faq-4:hover{
+.quiz-4:hover{
     color: rgb(225, 0, 255);
 }
 
-.faq-5:hover{
+.quiz-5:hover{
     color: rgb(225, 0, 255);
 }
 
-.faq-6:hover{
+.quiz-6:hover{
     color: rgb(255, 0, 255);
 }
 
-.faq-7:hover{
+.quiz-7:hover{
     color: rgb(255, 0, 255);
 }
 
-.faq-8:hover{
+.quiz-8:hover{
     color: rgb(225, 0, 255);
 }
 
-.faq-9:hover{
+.quiz-9:hover{
     color: rgb(225, 0, 255);
 }
 
