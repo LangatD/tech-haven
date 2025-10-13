@@ -125,6 +125,7 @@ body{
 
 .content2 h5{
     font-size: 16px;
+    color: rgba(100, 40, 180, 1);
 }
 
 .content2-row1-1{
@@ -136,21 +137,58 @@ body{
 
 .content2-row1-main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border: 1px solid rgba(180, 180, 180, 1);
-    padding-inline: 20px;
+    background-color: rgba(255, 255, 255, .5);
     border-radius: 5px ;
     height: 130px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    h5{
+        margin-bottom: 10px;
+    }
+    .row1-first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        i{
+            color: rgba(107, 62, 167,1);
+            background: rgba(186, 74, 206, .1);
+            padding: 20px;
+            border-radius: 50%;
+        }
+    }
 }
 
 
 
 .content2-row2-main{
-    border:1px solid rgba(180, 180, 180, 1);
     display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    padding-inline: 20px;
+    flex-direction: row;
+    border: 1px solid rgba(180, 180, 180, 1);
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 5px ;
+    height: 130px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    h5{
+        margin-bottom: 10px;
+    }
+    .row2-first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        i{
+            color: rgba(107, 62, 167,1);
+            background: rgba(186, 74, 206, .1);
+            padding: 20px;
+            border-radius: 50%;
+        }
+    }
 }
 
 .row2-bottom{
@@ -174,11 +212,29 @@ body{
 
 .content2-row3-main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border: 1px solid rgba(180, 180, 180, 1);
-    padding-inline: 28px;
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 5px ;
     height: 130px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    h5{
+        margin-bottom: 10px;
+    }
+    .row3-first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        i{
+            color: rgba(107, 62, 167,1);
+            background: rgba(186, 74, 206, .1);
+            padding: 20px;
+            border-radius: 50%;
+        }
+    }
 }
 
 .row3-bottom{
@@ -195,10 +251,29 @@ body{
 
 .content2-row4-main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border: 1px solid rgba(180, 180, 180, 1);
-    border-radius: 5px;
-    padding-inline: 17px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 5px ;
+    height: 130px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    h5{
+        margin-bottom: 10px;
+    }
+    .row4-first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        i{
+            color: rgba(107, 62, 167,1);
+            background: rgba(186, 74, 206, .1);
+            padding: 20px;
+            border-radius: 50%;
+        }
+    }
 }
 
 .row4-bottom{
@@ -222,11 +297,29 @@ body{
 
 .content2-row5-main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border: 1px solid rgba(180, 180, 180, 1);
-    border-radius: 5px;
-    padding-inline: 25px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 5px ;
     height: 130px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    h5{
+        margin-bottom: 10px;
+    }
+    .row5-first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        i{
+            color: rgba(107, 62, 167,1);
+            background: rgba(186, 74, 206, .1);
+            padding: 20px;
+            border-radius: 50%;
+        }
+    }
 }
 
 .row5-bottom{
@@ -243,10 +336,29 @@ body{
 
 .content2-row6-main{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border: 1px solid rgba(180, 180, 180, 1);
-    border-radius: 5px;
-    padding-inline: 12px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 5px ;
+    height: 130px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    h5{
+        margin-bottom: 10px;
+    }
+    .row6-first{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        i{
+            color: rgba(107, 62, 167,1);
+            background: rgba(186, 74, 206, .1);
+            padding: 20px;
+            border-radius: 50%;
+        }
+    }
 }
 
 .row6-bottom{
@@ -266,6 +378,7 @@ body{
     flex-direction: column;
     height: fit-content;
     background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px rgba(100, 40, 180, .5);
     border-radius: 5px;
     width: 30%;
     padding: 20px 40px;
@@ -280,9 +393,27 @@ body{
 }
 
 .c-on-my-side1{
+    display: flex;
+    flex-direction: column;
+    img{
+        color: rgba(100, 40, 180, 1);
+    }
+    i{
+        color: rgba(100, 40, 180, 1);
+        font-size: 20px;
+    }
+    p{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        margin-left: 20px;
+    }
     button{
         width: 100%;
         border: 2px solid rgba(100, 40, 180, 1);
+        background-color: rgb(186, 74, 206);
+        color: rgba(255, 255, 255, 1);
         border-radius: 5px;
         font-size: 16px;
         padding: 5px 0;
@@ -310,7 +441,19 @@ body{
     padding: 30px;
     border-radius: 10px;
     width:200px;
-    box-shadow: 0 0 10px rgba(107, 62, 167,1);
+    border: 3px solid rgba(107, 62, 167,1);
+    box-shadow: -5px 5px rgba(107, 62, 167,1);
+    .careers{
+        p{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            i{
+                color: rgba(100, 40, 180, 1);
+            }
+        }
+    }
 }
 
 .content3-mid{
@@ -319,6 +462,19 @@ body{
     border-radius: 10px;
     width:250px;
     box-shadow: 0 0 10px rgba(107, 62, 167,1);
+    border: 3px solid rgba(107, 62, 167,1);
+    box-shadow: 0 5px rgba(107, 62, 167,1);
+    .skills{
+        p{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            i{
+                color: rgba(100, 40, 180, 1);
+            }
+        }
+    }
 }
 
 .content3-right{
@@ -327,6 +483,19 @@ body{
     border-radius: 10px;
     width:230px;
     box-shadow: 0 0 10px rgba(107, 62, 167,1);
+    border: 3px solid rgba(107, 62, 167,1);
+    box-shadow: 5px 5px rgba(107, 62, 167,1);
+    .projects{
+        p{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            i{
+                color: rgba(100, 40, 180, 1);
+            }
+        }
+    }
 }
 
 .content4{
@@ -338,57 +507,57 @@ body{
 }
 
 .FAQ1 {
-  position: relative;
-  max-width: 50rem;
-  min-width: 30rem;
-  height: 50px;
-  background-color: lightgray;
-  color: black;
-  border-radius: 12px;
-  text-align: center;
-  padding: 20px;
-  overflow: hidden;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: relative;
+    max-width: 50rem;
+    min-width: 30rem;
+    height: 50px;
+    background-color: lightgray;
+    color: black;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .FAQ1::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 90px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background-color: purple;
-  /*border-radius: 50%;*/
-  transition: all 2s ease; 
-  z-index: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 90px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: purple;
+    /*border-radius: 50%;*/
+    transition: all 2s ease; 
+    z-index: 0;
 }
 
 
 .FAQ1 p {
-  position: relative;
-  z-index: 1;
-  transition: color 2s ease;
+    position: relative;
+    z-index: 1;
+    transition: color 2s ease;
 }
 
 
 .FAQ1:hover::before {
-  width: 1200px;
-  height: 1200px;
-  border-radius: 50%;
-  top: -600px; 
-  right: -100px;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    top: -600px; 
+    right: -100px;
 }
 
 
 .FAQ1:hover p {
-  color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 footer{
