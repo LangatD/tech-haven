@@ -3,19 +3,24 @@ body{
     background-color: rgba(100, 30, 180, .1);
     height: 100%;
     margin-bottom: 0;
+    overflow-x: hidden;
 }
 
 .about-logo{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     margin-right: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    margin: 0;
 }
 
 .about-logo a{
     display: flex;
     flex-direction: row;
-    margin: 5px;
+    margin-left: 5px;
     padding: 5px;
     gap: 10px;
     align-items: center;
@@ -25,14 +30,16 @@ body{
 
 .about-logo button{
     padding: 10px;
+    margin-right: 10px;
     height:35px;
-    margin-top: 35px;
-    background-color: rgba(118, 14, 187, 1);
+    background-color: rgba(129, 35, 118, 1);
     border: none;
     color: rgba(255, 255, 255, 1);
-    font-weight: bold;
-    font-size: 15px;
+    font-weight: normal;
+    font-size: 18px;
     border-radius: 5px;
+    height: 50px;
+    padding-inline: 20px;
 }
 
 
@@ -90,7 +97,8 @@ body{
 }
 
 .mission{
-    background-color: rgba(110, 25, 206, 0.2);
+    /*background-color: rgba(110, 25, 206, 0.2);*/
+    background-color: rgba(255, 255, 255, 1);
     padding-inline: 20px;
     width: 50%;
     height: 200px;
@@ -108,7 +116,8 @@ body{
 }
 
 .vission{
-    background-color: rgba(110, 25, 206, 0.2);
+    /*background-color: rgba(110, 25, 206, 0.2);*/
+    background-color: rgba(255, 255, 255, 1);
     padding-inline: 20px;
     width: 50%;
     height: 200px;
@@ -136,11 +145,12 @@ body{
 }
 
 .courses-cards{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin-inline: 10px;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    margin-inline: 10%;
+    column-gap: 5%;
+    row-gap: 3%;
 }
 
 .python{
@@ -152,16 +162,19 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(110, 25, 206, 0.9);
     padding-bottom: 10px;
+    padding-top: 10px;
     div{
         display: flex;
         align-items: center;
         justify-content: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        background-color: rgba(110, 25, 206, 0.9);
+        background-color: /*rgba(110, 25, 206, 0.9)*/ rgba(129, 35, 118, 1);
         width: 100%;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         i{
             font-size: 40px;
             color: rgba(255, 255, 255, 1);
@@ -252,7 +265,7 @@ body{
 .ig-about i{
     align-self: center;
     font-size: 30px;
-     background: linear-gradient(to top right, rgb(252, 114, 2), rgba(247, 0, 255, 1));
+    background: linear-gradient(to top right, rgb(252, 114, 2), rgba(247, 0, 255, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
