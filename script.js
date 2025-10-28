@@ -126,3 +126,17 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("this is the stupid error:", error);
   }
 });
+
+const FAQS1 = document.querySelector(".quiz-1");
+const ans1 = document.querySelectorAll(".ans-1");
+
+if(FAQS1 && ans1){
+  FAQS1.addEventListener("click", () => {
+    alert("clicked!")
+    if(ans1.style.display == "none"){
+      ans1.style.display = "flex";
+    }else{
+      ans1.style.display = "none";
+    }
+  })
+}
