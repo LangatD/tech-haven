@@ -5,9 +5,9 @@ const rememberMe = document.getElementById("rememberMe");
 const form = document.getElementById("form1");
 const userError = document.getElementById("user-errormessage");
 const passError = document.getElementById("pass-errormessage");
-
+ const API_URL = 'https://tech-haven-backend.onrender.com';
 if(form){
-    form.addEventListener("submit", function(e){
+    form.addEventListener("submit",async function(e){
         e.preventDefault();
         
         userError.textContent = "";
@@ -68,7 +68,60 @@ if(form){
         }
 
         if (valid){
-            alert("submitted successfully!")
+
+            //alert("submitted successfully!")
+            submitBtn.disabled = true;
+            try {
+                
+                const response = await fetch(`${API_URL}/api/auth/login`, { 
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        username: usernameValue,
+                        password: passwordValue
+                    })
+                });
+
+                const data = await response.json();
+
+                if (!data.success) {
+                    
+                    passError.textContent = data.error || 'Login failed. Please try again.';
+                    passError.style.display = "block";
+                    passError.style.color = "red";
+                } else {
+
+                    const storage = rememberMe.checked ? localStorage : sessionStorage;
+                    storage.setItem('authToken', data.token);  
+
+                    
+                    if (data.user) {
+                        storage.setItem('userRole', data.user.role);
+                    }
+
+                    alert("Login successful!");  //  redirect to studetn dashboard later or admin dash
+                    
+                   // if (data.user && data.user.role === 'admin') {
+                    //    window.location.href = '/admin/dashboard';
+                   // } else {
+                   //     window.location.href = '/student/dashboard';  
+                   // }
+                }
+            } catch (error) {
+                
+                console.error('Login error:', error);
+                passError.textContent = 'An error occurred. Please check your connection.';
+                passError.style.display = "block";
+                passError.style.color = "red";
+            } finally {
+                
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Log In";  
+                        }
+
+
         }
     })
 };

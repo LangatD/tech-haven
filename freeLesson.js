@@ -1,4 +1,4 @@
- const API_URL = 'http://localhost:3000/api';
+ const API_URL = 'https://tech-haven-backend.onrender.com';
 
 
 
@@ -53,7 +53,7 @@ async function bookTrialLesson(e) {
     
     try {
         
-        const response = await fetch(`${API_URL}/trial-lesson/book`, {
+        const response = await fetch(`${API_URL}/api/trial-lesson/book`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
