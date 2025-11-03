@@ -3,9 +3,11 @@ html{
 }
 
 body{
-    background-color: rgba(151, 84, 172, 0.342);
+    background-color: rgba(255, 255, 255, 1);
+    /*background-color: rgba(151, 84, 172, 0.342);*/
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    padding-inline: 0;
 }
 
 .header{
@@ -27,6 +29,12 @@ body{
 .header a{
     color: rgba(143, 12, 143, 0.9);
     text-decoration: none;
+}
+
+.welcome{
+    background-color: rgba(151, 84, 172, 0.342);
+    margin: 0;
+    padding-inline: 0;
 }
 
 .welcome-1stchild .with-i{
