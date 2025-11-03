@@ -538,10 +538,15 @@ body{
     justify-content: space-between;
     font-size: 20px;
     align-items: center;
+    min-width: 60%;
+    margin-inline: 5%;
 }
 .ans-1, .ans-2, .ans-3, .ans-3, .ans-4, .ans-5, .ans-6, .ans-7, .ans-8, .ans-9{
     font-size: 20px;
-    display: flex;
+    display: none;
+    align-items: center;
+    margin-inline: 5%;
+    min-width: 60%;
 }
 
 .quiz-1:hover{

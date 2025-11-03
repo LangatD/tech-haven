@@ -23,6 +23,11 @@ body{
     border-radius: 50%;
 }
 
+.techHaven-bold{
+    color: rgba(6, 18, 250, 0.9);
+    text-decoration: underline;
+}
+
 .freeless-content{
     display: flex;
     flex-direction: row;
