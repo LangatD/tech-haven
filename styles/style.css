@@ -2,12 +2,17 @@ html{
     scroll-behavior: smooth;
 }
 
+main{
+    width: 100%;
+}
+
 body{
     background-color: rgba(255, 255, 255, 1);
     /*background-color: rgba(151, 84, 172, 0.342);*/
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     padding-inline: 0;
+    overflow-x: hidden;
 }
 
 .header{
@@ -32,7 +37,8 @@ body{
 }
 
 .welcome{
-    background-color: rgba(151, 84, 172, 0.342);
+    width: 100vw;
+    background-color: rgba(151, 84, 172, 0.1);
     margin: 0;
     padding-inline: 0;
 }
@@ -157,6 +163,27 @@ body{
     height: 50px;
 }
 
+.trusted{
+    font-size: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgba(143, 12, 143, 0.9);
+    width: 40px;
+    animation-delay: 1s;
+    animation: typing 20s steps(60) infinite alternate, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    0% { width: 0; }
+    60% { width: 75%; }
+    80% { width: 75%;}
+    100% { width: 0%;}
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
 .course-img{
     width: 100%;
     height: 150px;
@@ -199,6 +226,13 @@ body{
     background-color: rgba(255, 255, 255, .6);
     transition: transform .35s ease-in-out;
     width: 280px;
+}
+
+.web-course p:nth-last-of-type(1){
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .web-course a{
@@ -338,12 +372,14 @@ body{
 
 .reason{
     margin: 30px;
+    margin-inline: 0;
     padding-top: 20px;
     padding-inline: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(151, 84, 172, 0.1);
     gap: 20px;
     h2{
         font-size: 40px;
@@ -467,11 +503,12 @@ body{
 .kids-reviews-parent{
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(210, 139, 248, 0.305);
     /*background-color: rgba(206, 40, 248, 0.185);*/
-    margin: 30px;
+    margin-inline: 0;
     border-radius: 10px;
     margin-top: 80px;
+    padding-top: 50px;
 }
 
 .kids-reviews{

@@ -5,7 +5,7 @@ const rememberMe = document.getElementById("rememberMe");
 const form = document.getElementById("form1");
 const userError = document.getElementById("user-errormessage");
 const passError = document.getElementById("pass-errormessage");
- const API_URL = 'https://tech-haven-backend.onrender.com';
+const API_URL = 'https://tech-haven-backend.onrender.com';
 if(form){
     form.addEventListener("submit",async function(e){
         e.preventDefault();

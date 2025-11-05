@@ -139,6 +139,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
 }
 
 .about-courses p:nth-of-type(1){
@@ -148,10 +149,20 @@ body{
 .courses-cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
     width: 70%;
     margin-inline: 10%;
     column-gap: 5%;
     row-gap: 3%;
+}
+
+.stupid-chatgpt{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 45%;
+    margin-inline: 10%;
+    column-gap: 5%;
 }
 
 .python{
@@ -237,6 +248,7 @@ body{
         width: 90%;
         height: 10rem;
         border-left: 4px solid rgba(23, 120, 247, 1);
+        box-shadow: 0 0 10px rgba(100, 30, 180, .5);
         h5{
             padding-bottom: 0;
             margin-bottom: 0;
@@ -252,14 +264,27 @@ body{
         p:nth-of-type(2){
             padding-bottom: 0;
             margin: 0 0;
+            color: rgb(9, 73, 157);
         }
     }
+}
+
+.right div::after{
+    content: "hello";
+    margin-left: auto;
+    margin-top: -9rem;
+    background-color: rgb(9, 118, 243);
+    color: rgba(255, 255, 255, .0);
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    clip-path: circle(50% at 78% 26%);
 }
 
 .left-1{
     animation: slide 1s ease-in-out;
     animation-timeline: view();
-    animation-range: 5% 70%;
+    animation-range: entry 0% cover 20%;
 }
 
 @keyframes slide{
@@ -280,7 +305,7 @@ body{
     font-size: 30px;
     transform: translate(36px, -60px);
     margin-left: auto;
-    color: rgb(9, 118, 243);
+    color: rgba(9, 118, 243, 1);
 }
 
 .styling-div{
@@ -308,6 +333,7 @@ body{
         padding-top: 0;
         width: 90%;
         height: 10rem;
+        box-shadow: 0 0 10px rgba(100, 30, 180, .5);
         h5{
             padding-bottom: 0;
             margin-bottom: 0;
@@ -323,6 +349,7 @@ body{
         p:nth-of-type(2){
             padding-bottom: 0;
             margin: 0 0;
+            color: rgba(9, 118, 243, 1);
         }
     }
 }
