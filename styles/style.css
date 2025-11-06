@@ -455,8 +455,8 @@ body{
 }
 
 .whys{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-inline: 50px;
     gap: 10px;
     padding-inline: 25px;

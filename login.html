@@ -4,53 +4,70 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/login.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
     <div class="heading">
         <a href="index.html">
-            <img class="logo-login" src="th1.jpg" alt="logo">
+            <img class="logo-login" src="assets/cnbg.png" alt="logo">
             <p>TECH HAVEN</p>
         </a>
+        <button class="freeless-btn">
+            Try a Free Lesson
+        </button>
     </div>
 
-    <section class="wrap">
-        <form action="#" id="form1">
-            <div class="login-back">
-                <h5>Welcome Back to Tech Haven</h5>
+    <section class="login">
+        <div class="left-login">
+            <h4>Welcome Back to <span class="our-name">Tech Haven</span></h4>
+            <p class="new-door">Open new doors with us today</p>
+            <div class="rev-login">
+                <i class='bxr  bx-quote-left'    ></i> 
+                <i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, recusandae.
+                </i>
+                <p class="student">
+                    studen's name
+                </p>
+            </div>
+        </div>
 
-                <div class="u-name">
-                    <div class="u-name1">
-                        <label for="username">USERNAME:</label>
-                        <input type="text" id="username" required>
-                        <i class='bxr  bx-user-circle'  ></i> 
+        <form action="#" class="signIn-form">
+            <div class="child">
+                <h5>
+                    Sign In
+                </h5>
+                <div class="em-div">
+                    <label for="email">Email:</label>
+                    <input type="email" class="email" id="email" required>
+                </div>
+
+                <br>
+
+                <div class="pass-div">
+                    <label for="password">Password:</label>
+                    <input type="password" class="password" id="password" required>
+                </div>
+
+                <br>
+
+                <div class="stupids">
+                    <div class="check">
+                        <input type="checkbox">
+                        <p>Remember me</p>
                     </div>
-                    <div class="u-name2">
-                        <p id="user-errormessage"></p>
+
+                    <div>
+                        <a href="#">forgot password?</a>
                     </div>
                 </div>
 
-                <div class="p-word">
-                    <div class="p-word1">
-                        <label for="password">PASSWORD:</label>
-                        <input type="password" id="password" required>
-                        <i class='bxr  bx-eye-closed' ></i> 
-                        <i class='bxr  bx-lock'  ></i> 
-                    </div>
-                    <div class="p-word2">
-                        <p id="pass-errormessage"></p>
-                    </div>
-                </div>
+                <br>
 
-                <div class="log-be-submit">
-                    <input type="checkbox" id="rememberMe">
-                    <p>Remember Me</p>
-                    <a href="passReset.html">Forgot Password?</a>
-                </div>
-
-                <div class="log-submit">
-                    <button id="submitBtn">Log In</button>
+                <div>
+                    <button class="sign-btn">Sign In</button>
                 </div>
             </div>
         </form>
