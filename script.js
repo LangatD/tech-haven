@@ -134,7 +134,7 @@ const icon1 = document.querySelector(".icon1");
 if(FAQS1 && ans1){
   FAQS1.addEventListener("click", () => {
     
-    if(ans1.style.display == "none"){
+    if(ans1.style.display === "none"){
       ans1.style.display = "flex";
       icon1.className = "bx-chevron-up"
     }else{
@@ -151,7 +151,7 @@ const icon2 = document.querySelector(".icon2");
 if(FAQS2 && ans2){
   FAQS2.addEventListener("click", () => {
     
-    if(ans2.style.display == "none"){
+    if(ans2.style.display === "none"){
       ans2.style.display = "flex";
       icon2.className = "bx-chevron-up"
     }else{
@@ -168,7 +168,7 @@ const icon3 = document.querySelector(".icon3");
 if(FAQS3 && ans3){
   FAQS3.addEventListener("click", () => {
     
-    if(ans3.style.display == "none"){
+    if(ans3.style.display === "none"){
       ans3.style.display = "flex";
       icon3.className = "bx-chevron-up"
     }else{
@@ -185,7 +185,7 @@ const icon4 = document.querySelector(".icon4");
 if(FAQS4 && ans4){
   FAQS4.addEventListener("click", () => {
     
-    if(ans4.style.display == "none"){
+    if(ans4.style.display === "none"){
       ans4.style.display = "flex";
       icon4.className = "bx-chevron-up"
     }else{
@@ -202,7 +202,7 @@ const icon5 = document.querySelector(".icon5");
 if(FAQS5 && ans5){
   FAQS5.addEventListener("click", () => {
     
-    if(ans5.style.display == "none"){
+    if(ans5.style.display === "none"){
       ans5.style.display = "flex";
       icon5.className = "bx-chevron-up"
     }else{
@@ -219,7 +219,7 @@ const icon6 = document.querySelector(".icon6");
 if(FAQS6 && ans6){
   FAQS6.addEventListener("click", () => {
     
-    if(ans6.style.display == "none"){
+    if(ans6.style.display === "none"){
       ans6.style.display = "flex";
       icon6.className = "bx-chevron-up"
     }else{
@@ -234,9 +234,9 @@ const ans7 = document.querySelector(".ans-7");
 const icon7 = document.querySelector(".icon7");
 
 if(FAQS7 && ans7){
-  FAQS2.addEventListener("click", () => {
+  FAQS7.addEventListener("click", () => {
     
-    if(ans7.style.display == "none"){
+    if(ans7.style.display === "none"){
       ans7.style.display = "flex";
       icon7.className = "bx-chevron-up"
     }else{
@@ -253,7 +253,7 @@ const icon8 = document.querySelector(".icon8");
 if(FAQS8 && ans8){
   FAQS8.addEventListener("click", () => {
     
-    if(ans8.style.display == "none"){
+    if(ans8.style.display === "none"){
       ans8.style.display = "flex";
       icon8.className = "bx-chevron-up"
     }else{
@@ -270,7 +270,7 @@ const icon9 = document.querySelector(".icon9");
 if(FAQS9 && ans9){
   FAQS9.addEventListener("click", () => {
     
-    if(ans9.style.display == "none"){
+    if(ans9.style.display === "none"){
       ans9.style.display = "flex";
       icon9.className = "bx-chevron-up"
     }else{
