@@ -1,10 +1,10 @@
-const username = document.getElementById("username");
-const password = document.getElementById("password");
-const submitBtn = document.getElementById("submitBtn");
-const rememberMe = document.getElementById("rememberMe");
-const form = document.getElementById("form1");
-const userError = document.getElementById("user-errormessage");
-const passError = document.getElementById("pass-errormessage");
+const password = document.querySelector(".password");
+const email = document.querySelector(".email");
+const submitBtn = document.querySelector(".sign-btn");
+const rememberMe = document.querySelector(".rememberMe");
+const form = document.querySelector(".signIn-form");
+const userError = document.querySelector("#user-errormessage");
+const passError = document.querySelector("#pass-errormessage");
 const API_URL = 'https://tech-haven-backend.onrender.com';
 if(form){
     form.addEventListener("submit",async function(e){
@@ -13,28 +13,31 @@ if(form){
         userError.textContent = "";
         passError.textContent = "";
 
-        const usernameValue = username.value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        const usermailValue = email.value.trim();
         const passwordValue = password.value.trim();
 
         let valid = true;
 
-        if (usernameValue === ""){
-            userError.textContent = "Please enter your name.";
+        if (usermailValue === ""){
+            userError.textContent = "Please enter your email.";
             valid = false;
             userError.style.display = "block";
             userError.style.color = "red";
-        }else if(usernameValue.length <= 5){
-            userError.textContent = "Name must be longer than 5 characters.";
+        } else if (!emailRegex.test(usermailValue)) {
+            userError.textContent = "Please enter a valid email address.";
             valid = false;
             userError.style.display = "block";
             userError.style.color = "red";
-        }else if(usernameValue.length > 20){
-            userError.textContent = "Name cannot be longer than 20 characters.";
-            valid = false;
-            userError.style.display = "block";
-            userError.style.color = "red";
+        } else {
+    
+            userError.style.display = "none";
+            userError.textContent = "";
         }
-
+        
+            
+        
         if(passwordValue == ""){
             passError.textContent = "password cannot be empty!";
             valid = false;
@@ -46,8 +49,6 @@ if(form){
             valid = false;
             passError.style.color = "red";
         }else if (!/[A-Z]/.test(passwordValue)){
-            passError.textContent = "password must have at least one uppercase";
-            passError.style.display = "block";
             valid = false;
             passError.style.color = "red";
         }else if(!/[a-z]/.test(passwordValue)){
@@ -79,7 +80,7 @@ if(form){
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        username: usernameValue,
+                        usermail: usermailValue,
                         password: passwordValue
                     })
                 });
@@ -120,11 +121,7 @@ if(form){
                 submitBtn.disabled = false;
                 submitBtn.textContent = "Log In";  
                         }
-
-
         }
-    })
-};
 /*const resetPass = document.getElementById("passwordReset");*/
 const passCheck = document.querySelector(".bx-eye-closed");
 
@@ -135,4 +132,6 @@ if(passCheck){
         passCheck.classList.toggle("bx-eye");
         passCheck.classList.toggle("bx-eye-closed");
     })
-};
+}
+    })
+}
