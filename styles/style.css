@@ -530,26 +530,50 @@ body{
 }
 
 .why-1, .why-2, .why-3, .why-4, .why-5{
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(205, 12, 192, .3);
     border-radius: 20px;
     padding-inline: 10px;
     padding-top: 0;
-    box-shadow: 0 5px 5px rgba(5, 5, 5, 0.9), inset 0 5px 10px rgba(154, 32, 170, 0.5), inset -5px -5px 10px rgb(255, 255, 255);
+    box-shadow: 0 5px 5px rgba(5, 5, 5, 0.9), inset 0 5px 10px rgba(0, 0, 0, 0.5), inset -5px -5px 10px rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-inline: 30px;
     h6{
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 0;
         margin-top: 20px;
         align-self: center;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+
+.why-1{
+    h6{
+        color: blue;
+    }
+}
+
+.why-2{
+    h6{
+        color: chocolate;
+    }
+}
+
+.why-4{
+    h6{
+        color: rgb(255, 0, 43);
     }
 }
 
 .why-5{
     align-self: center;
+    h6{
+        color: rgb(53, 91, 160);
+    }
 }
 
 .rev-1-img{
@@ -561,6 +585,7 @@ body{
 .kids-reviews-parent{
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: rgba(210, 139, 248, 0.305);
     /*background-color: rgba(206, 40, 248, 0.185);*/
     margin-inline: 0;
@@ -568,28 +593,38 @@ body{
     margin-top: 80px;
     padding-top: 50px;
     position: relative;
-    height: fit-content;
+    height: 450px;
 }
 
 .after-thought{
     position: absolute;
-    animation: rotateReviews 12s infinite;
+    animation: rotateReviews 14s infinite ease-in-out;
 }
 
 @keyframes rotateReviews {
-    0%{ opacity: 0;}
-    10%{ opacity: 1;}
-    40% { opacity: 1; }
-    50% { opacity: 0; }
+    0%{ 
+        opacity: 0;
+    }
+    10%{ 
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+    40% { 
+        opacity: 1;
+        transform: translateX(20px);
+     }
+    50% { 
+        opacity: 0;
+     }
     100% { opacity: 0; }
 }
 
 .after-thought:nth-child(1){
-    animation-delay: 0.5s;
+    animation-delay: 1s;
 }
 
 .after-thought:nth-child(2){
-    animation-delay: 6s;
+    animation-delay: 7s;
 }
 
 .par-reviews{
@@ -597,7 +632,7 @@ body{
     flex-direction: row;
 }
 
-.kids-reviews{
+.after-thought{
     margin-inline: 20px;
     display: flex;
     flex-direction: row;
@@ -610,18 +645,19 @@ body{
     text-align: center;
 }
 
-.rev-1, .rev-2, .rev-3, .rev-4, .rev-5, .rev-6, .rev-7, .rev8, .rev9{
+.rev-1, .rev-2, .rev-3, .rev-4, .rev-5, .rev-6, .rev-7, .rev-8, .rev-9{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
+    width: 350px;
     border: none;
     padding-inline: 20px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.432);
     box-shadow: inset 10px 10px 10px rgba(209, 118, 235, 0.856), inset -10px -10px 10px rgb(255, 255, 255);
     height: 300px;
+    margin-top: 50px;
 }
 
 .rev-1 p{
