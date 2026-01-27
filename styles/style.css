@@ -191,7 +191,7 @@ body{
 
 .courses-detail{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: max-content;
     column-gap: 10px;
     justify-content: space-around;
@@ -202,7 +202,7 @@ body{
 }
 
 .courses{
-    background-color: rgba(255, 255, 255, .5);
+    background-color:rgba(255, 255, 255, .5);
     border-radius: 10px;
     margin-inline: 10px;
     padding: 10px;
@@ -387,16 +387,29 @@ body{
 }
 
 .reason-1{
-    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*background-color: red;*/
+    width: 100%;
     display: flex;
     flex-direction: row;
     gap:50px;
-    padding: 25px;
+    padding: 10px;
     font-size: 25px;
     /*background-color:  rgba(124, 12, 189, .3);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 1);*/
+    img{
+        clip-path: circle(50%);
+    }
     div{
+        width: 30%;
+        h5{
+            font-size: 30px;
+            padding: 0;
+        }
         p{
             font-size: 22px;
         }
@@ -404,16 +417,25 @@ body{
 }
 
 .reason-2{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap:50px;
     padding: 25px;
     font-size: 25px;
     /*background-color:  rgba(124, 12, 189, .3);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 1);*/
+    img{
+        clip-path: circle(50%);
+    }
     div{
+        width: 30%;
+        h5{
+            font-size: 30px;
+        }
         p{
             font-size: 22px;
         }
@@ -421,16 +443,25 @@ body{
 }
 
 .reason-3{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap:50px;
     padding: 25px;
     font-size:25px;
     /*background-color:  rgba(124, 12, 189, .3);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 1);*/
+    img{
+        clip-path: circle(50%);
+    }
     div{
+        width: 30%;
+        h5{
+            font-size: 30px;
+        }
         p{
             font-size: 22px;
         }
@@ -438,16 +469,25 @@ body{
 }
 
 .reason-4{
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     gap:50px;
     padding: 25px;
     font-size: 25px;
     /*background-color:  rgba(124, 12, 189, .3);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 1);*/
+    img{
+        clip-path: circle(50%);
+    }
     div{
+        width: 30%;
+        h5{
+            font-size: 30px;
+        }
         p{
             font-size: 22px;
         }
@@ -457,9 +497,20 @@ body{
 .whys{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     margin-inline: 50px;
     gap: 10px;
     padding-inline: 25px;
+}
+.codebase{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-inline: 10%;
+    margin-top: 30px;
+    gap: 20px;
 }
 
 .why-us{
@@ -487,11 +538,18 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding-inline: 30px;
     h6{
-        font-size: 15px;
+        font-size: 20px;
         margin-bottom: 0;
         margin-top: 20px;
+        align-self: center;
     }
+}
+
+.why-5{
+    align-self: center;
 }
 
 .rev-1-img{
