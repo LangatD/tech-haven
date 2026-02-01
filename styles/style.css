@@ -374,7 +374,7 @@ body{
     margin: 30px;
     margin-inline: 0;
     padding-top: 20px;
-    padding-inline: 40px;
+    padding-inline: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -387,6 +387,9 @@ body{
 }
 
 .reason-1{
+    background-color: rgba(255, 255, 255, .8);
+    /*border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -443,6 +446,7 @@ body{
 }
 
 .reason-3{
+    background-color: rgba(255, 255, 255, .8);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -552,28 +556,36 @@ body{
 }
 
 .why-1{
-    h6{
+    background-color: chocolate;
+    /*h6{
         color: blue;
-    }
+    }*/
+}
+
+.why-3{
+    background-color: darkgoldenrod;
 }
 
 .why-2{
-    h6{
+    background-color: blue;
+    /*h6{
         color: chocolate;
-    }
+    }*/
 }
 
 .why-4{
-    h6{
+    background-color: aqua;
+    /*h6{
         color: rgb(255, 0, 43);
-    }
+    }*/
 }
 
 .why-5{
+    background-color: rgb(103, 240, 5);
     align-self: center;
-    h6{
+    /*h6{
         color: rgb(53, 91, 160);
-    }
+    }*/
 }
 
 .rev-1-img{

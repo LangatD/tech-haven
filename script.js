@@ -103,8 +103,10 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location = "freeless.html"}
   });
 
+});
+
   //let's make the faq section in the courses pages interactive
-  try{
+  /*try{
     const faq = document.querySelector("#FAQ1");
     const faqTxt = document.querySelector(".FAQ-text");
 
@@ -127,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }catch(error){
     console.log("this is the stupid error:", error);
   }
-});
+});*/
 
 const FAQS1 = document.querySelector(".quiz-1");
 const ans1 = document.querySelector(".ans-1");

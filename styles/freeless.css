@@ -2,7 +2,28 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
-    background-color: rgba(180, 180, 180, .2);
+    background: linear-gradient(250deg, /*rgba(180, 180, 180, .2)*/white 10%, /*rgba(255, 255, 255, 1)*/ rgba(152, 2, 189, .4) 90%);
+}
+
+.freeless-head{
+    box-shadow: 0 0 5px rgba(100, 20, 180, .8);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.in-studio-button{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(129, 35, 118);
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: normal;
+    padding-inline: 40px;
+    height: 50px;
 }
 
 .freeless-head a{
@@ -13,7 +34,7 @@ body{
     gap: 10px;
     align-items: center;
     text-decoration: none;
-    color: rgba(0, 0, 0, .9);
+    color: rgba(100, 40, 180, 1);
     font-size: 25px;
 }
 
@@ -50,6 +71,8 @@ body{
     background-color: rgba(100, 20, 180, .2);
     padding-inline: 15px;
     padding-inline: 20px;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
 
 .freeless-atract i{
@@ -63,7 +86,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 40%;
+    width: 50%;
     padding-left: 0;
     margin-left: 0;
     padding-top: 30px;
@@ -73,22 +96,26 @@ body{
 .number-freeless{
     display: flex;
     flex-direction: column;
+    font-size: 25px;
 }
 
 .username-freeless{
     display: flex;
     flex-direction: column;
+    font-size: 25px;
 }
 
 .email-freeless{
     display: flex;
     flex-direction: column;
+    font-size: 25px;
 }
 
 .freeless-maincont input{
     width: 20rem;
     outline: none;
     padding: 5px;
+    height: 25px;
 }
 
 .freeless-maincont button{
@@ -106,23 +133,37 @@ body{
 
 .course-freeless{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
     width: 89%;
     justify-content: space-between;
     align-items: center;
+    label{
+        align-self: flex-start;
+    }
+}
+
+.for-course{
+    font-size: 25px;
 }
 
 #course{
     width: 70%;
-    height: 30px;
+    height: 35px;
+    outline: none;
 }
 
 .date-time{
-    width: 89%;
+    width: 85%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0;
+}
+
+.datetime{
+    float: left;
 }
 
 .date-time input{
