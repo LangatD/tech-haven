@@ -2,7 +2,8 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0;
-    background: linear-gradient(250deg, /*rgba(180, 180, 180, .2)*/white 10%, /*rgba(255, 255, 255, 1)*/ rgba(152, 2, 189, .4) 90%);
+    font-family: 'Poppins', sans-serif;
+    /*background: linear-gradient(250deg, /*rgba(180, 180, 180, .2)white 10%, /*rgba(255, 255, 255, 1) rgba(152, 2, 189, .4) 90%);*/
 }
 
 .freeless-head{
@@ -44,128 +45,148 @@ body{
     border-radius: 50%;
 }
 
-.techHaven-bold{
-    color: rgba(6, 18, 250, 0.9);
-    text-decoration: underline;
-}
-
-.freeless-content{
+#freeless-content{
     display: flex;
     flex-direction: row;
-    margin-inline: 30px;
-    width: 70%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: space-between;
-    /*box-shadow: 0 0 10px rgba(0, 0, 0, .9);*/
-    padding-right: 70px;
+    align-items: center;
+    width: 80%;
+    margin-inline: 10%;
+    margin-top: 5%;
+    gap: 10%;
 }
 
-.freeless-atract{
-    width: 35%;
-    font-size: 30px;
-    gap: 5px;
-    padding-top: 30px;
-    background-color: rgba(100, 20, 180, .2);
-    padding-inline: 15px;
-    padding-inline: 20px;
-    z-index: 100;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
-}
-
-.freeless-atract i{
-    font-size: 35px;
-    color: rgba(50, 50, 50, 1);
-}
-
-.freeless-maincont{
+#freeless-atract{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 50%;
-    padding-left: 0;
-    margin-left: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.number-freeless{
-    display: flex;
-    flex-direction: column;
-    font-size: 25px;
-}
-
-.username-freeless{
-    display: flex;
-    flex-direction: column;
-    font-size: 25px;
-}
-
-.email-freeless{
-    display: flex;
-    flex-direction: column;
-    font-size: 25px;
-}
-
-.freeless-maincont input{
-    width: 20rem;
-    outline: none;
-    padding: 5px;
-    height: 25px;
-}
-
-.freeless-maincont button{
-    width: 20.5rem;
-    height: 1.5rem;
-    margin-top: 10px;
-    padding-bottom: 30px;
-    padding-top: 10px;
-    background-color: rgba(100, 20, 180, .8);
-    color: rgba(255, 255, 255, 1);
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-}
-
-.course-freeless{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    width: 89%;
-    justify-content: space-between;
-    align-items: center;
-    label{
-        align-self: flex-start;
+    padding: 4%;
+    border-left: 5px solid rgba(129, 35, 118, 1);
+    border-radius: 30px;
+    width: 40%;
+    h3{
+        font-size: 2.5rem;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #free-span{
+        color: rgb(51, 117, 229);
+        text-decoration: underline;
+    }
+    p{
+        font-size: 1.4rem;
+        #techHaven-bold{
+            color: rgb(51, 117, 229);
+            font-size: 1.6rem;
+        }
     }
 }
 
-.for-course{
-    font-size: 25px;
-}
-
-#course{
-    width: 70%;
-    height: 35px;
-    outline: none;
-}
-
-.date-time{
-    width: 85%;
+#rise-jonas-blue{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
+    flex-direction: row;
+    align-self: center;
+    #rise1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        i{
+            color: rgb(18, 16, 16);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            height: 2.3rem;
+            background: linear-gradient(70deg,rgba(51, 117, 229, 1), rgba(129, 35, 118, 1));
+            border-radius: 10px;
+            padding: 0.8rem;
+            transform: translateY(1.5rem);
+        }
+        #rise1-1{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            padding: 0;
+            h6{
+                transform: translateY(2.5rem);
+                font-size: 1.5rem;
+            }
+            p{
+                color: rgba(72, 71, 74, 1);
+                transform: translateY(-1rem);
+                font-size: 1rem;
+            }
+        }
+    }
 
-.datetime{
-    float: left;
-}
+    #rise2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        i{
+            color: rgb(250, 174, 8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            height: 2.3rem;
+            background: linear-gradient(70deg,rgba(51, 117, 229, 1), rgba(129, 35, 118, 1));
+            border-radius: 10px;
+            padding: 0.8rem;
+            transform: translateY(1.5rem);
+        }
+        #rise2-2{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            padding: 0;
+            h6{
+                transform: translateY(2.5rem);
+                font-size: 1.4rem;
+            }
+            p{
+                color: rgba(72, 71, 74, 1);
+                transform: translateY(-1rem);
+                font-size: 1rem;
+            }
+        }
+    }
 
-.date-time input{
-    width: 70%;
+    #rise3{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+        i{
+            color: rgb(80, 246, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            height: 2.3rem;
+            background: linear-gradient(70deg,rgba(51, 117, 229, 1), rgba(129, 35, 118, 1));
+            border-radius: 10px;
+            padding: 1rem;
+            transform: translateY(1.5rem);
+        }
+        #rise3-3{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            padding: 0;
+            h6{
+                transform: translateY(2.5rem);
+                font-size: 1.4rem;
+            }
+            p{
+                color: rgba(72, 71, 74, 1);
+                transform: translateY(-1rem);
+                font-size: 1rem;
+            }
+        }
+    }
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/freeless.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -18,13 +19,42 @@
         </button>
     </div>
 
-    <div class="freeless-content">
-        <div class="freeless-atract">
-            <i class='bxr  bx-quote-left'  ></i> 
-            <p>Give your child a head start in tech! Try a free lesson at <b class="techHaven-bold">Tech Haven</b>, the online coding school where kids learn through creativity, play, and real-world projects.</p>
+    <div id="freeless-content">
+        <div id="freeless-atract">
+            <!--<i class='bxr  bx-quote-left'  ></i> -->
+            <h3>Start your Learning journey with a <span id="free-span">Free Lesson</span></h3>
+            <p>Give your child a head start in tech! Try a free lesson at <b id="techHaven-bold">Tech Haven</b>, the online coding school where kids learn through creativity, play, and real-world projects.</p>
+            
+            <div id="rise-jonas-blue">
+                <div id="rise1">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div id="rise1-1">
+                        <h6>500+</h6>
+                        <p>Expert tutors</p>
+                    </div>
+                </div>
+
+                <div id="rise2">
+                    <i class="fa-solid fa-star"></i>
+                    <div id="rise2-2">
+                        <h6>4.9/5</h6>
+                        <p>Student rating</p>
+                    </div>
+                </div>
+
+                <div id="rise3">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <div id="rise3-3">
+                        <h6>50k+</h6>
+                        <p>Happy students</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="freeless-maincont">
+            <h2>Book your free lesson</h2>
+            <h4>Fill the form below and we will match you with the perfect tutor.</h4>
             <div class="username-freeless">
                 <label for="username">Name:</label>
                 <input id="username" class="username" name="username" type="text" required>
@@ -54,6 +84,15 @@
                     <option value="Game development">Game development</option>
                     <option value="Cloud computing">Cloud computing</option>
                     <option value="Roblox">Roblox</option>
+                </select>
+            </div>
+
+            <div class="prof-level">
+                <select name="level" id="learning-level">
+                    <option value="" disabled selected hidden>select your proficiency level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
                 </select>
             </div>
 
