@@ -52,7 +52,7 @@ body{
     width: 80%;
     margin-inline: 10%;
     margin-top: 5%;
-    gap: 10%;
+    gap: 5%;
 }
 
 #freeless-atract{
@@ -60,7 +60,9 @@ body{
     flex-direction: column;
     justify-content: center;
     padding: 4%;
+    padding-inline: 6%;
     border-left: 5px solid rgba(129, 35, 118, 1);
+    border-right: 5px solid rgba(129, 35, 118, 1);
     border-radius: 30px;
     width: 40%;
     h3{
@@ -188,5 +190,110 @@ body{
                 font-size: 1rem;
             }
         }
+    }
+}
+
+#freeless-maincont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border-left: 2px solid rgba(129, 35, 118, 1);*/
+    width: 50%;
+    padding-inline: 4%;
+    transform: translateY(-25px);
+    h2{
+        font-size: 2.5rem;
+    }
+    #bellow-h2{
+        font-size: 1.2rem;
+        transform: translateY(-30px);
+    }
+    #username-freeless{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 10px;
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin-bottom: 1rem;
+        input{
+            height: 1.4rem;
+            outline: none;
+        }
+    }
+    #number-freeless{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 10px;
+        font-size: 1.5rem;
+        font-weight: normal;
+        margin-bottom: 1rem;
+        input{
+            outline: none;
+            height: 1.4rem;
+        }
+    }
+    #email-freeless{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 10px;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        input{
+            outline: none;
+            height: 1.4rem;
+        }
+    }
+    #course-freeless{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 60%;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        select{
+            padding: 5px;
+        }
+    }
+    #prof-level{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 1rem;
+        margin-bottom: 1rem;
+        width: 60%;
+        font-size: 1.5rem;
+        select{
+            padding: 5px;
+        }
+    }
+    #date-time{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 60%;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        input{
+            height: 1.4rem;
+            outline: none;
+        }
+        input:focus{
+            border: 1px solid rgba(129, 35, 118, 1);
+        }
+    }
+    #book-btn{
+        width: 60%;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(129, 35, 118, 1);
+        border: none;
+        color: rgba(255, 255, 255, 1);
+        border-radius: 5px;
+        font-size: 1.5rem;
     }
 }

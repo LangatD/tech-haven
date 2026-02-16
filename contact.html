@@ -3,117 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact|Tech Haven</title>
 </head>
 <body>
-    <div class="contact-logo">
+    <div id="circles">
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+        <div id="circle4"></div>
+        <div id="circle5"></div>
+        <div id="circle6"></div>
+    </div>
+
+    <div id="contact-logo">
         <a href="index.html">
-            <img src="th_logo2.png" alt="tech haven">
+            <img src="assets/cnbg.png" alt="tech haven">
             <p>TECH HAVEN</p>
         </a>
         <button onclick="window.location.href = 'freeless.html'">TRY FREE LESSON</button>
     </div>
 
-    <div class="wrapper">
-        <div class="contact-about">
-            <h2>Get in touch with us</h2>
-            <p> At Tech Haven we take seriously our customer issue. Reach out to us today and get your issue sorted.We value your feedback,comments and questions.</p>
-            <h2>our agents:</h2>
-            <div class="whatsapp">
-                <i class="bi bi-whatsapp"></i>
-                <p>+2547xxxxxxxx</p>
-            </div>
-            <div class="phone">
-                <i class="bi bi-telephone-plus-fill"></i>
-                <p>+2547xxxxxxxx</p>
-            </div>
-            <div class="email">
-                <i class="bi bi-envelope"></i>
-                <p>info@techhaven.com</p>
-            </div>
-            <div class="follow">
-                <h2>follow us on:</h2>
-                <div class="follow-i">
-                    <div class="fb-about">
-                        <a href="#">
-                            <i class="bi bi-facebook"></i>
-                        </a>
+    <div id="wrapper">
+        <h2>We're here to help</h2>
+        <p>Have a question or facing an issue? Our dedcated support team are here to help. Fill out the form below and we'll get back to you within 5 hours.</p>
+
+        <div id="wrappedBigKid">
+            <div id="wrappedChild1">
+                <h4>Get in Touch</h4>
+                <div id="wrappedEmail">
+                    <div id="emailKid1">
+                        <!--<i class="fa-solid fa-at"></i>-->
+                        <i class="fa-solid fa-envelope"></i>
                     </div>
 
-                    <div class="messenger-about">
-                        <a href="#">
-                            <i class="bi bi-messenger"></i>
-                        </a>
+                    <div id="emailKid2">
+                        <h5>Email us</h5>
+                        <p>support@techhaven.com</p>
+                        <p>we respond within 2-5 hours</p>
+                    </div>
+                </div>
+
+                <div id="wrappedNumber">
+                    <div id="numberKid1">
+                        <i class="fa-solid fa-phone"></i>
                     </div>
 
-                    <div class="ig-about">
-                        <a href="#">
-                            <i class="bi bi-instagram"></i>
-                        </a>
+                    <div id="numberKid2">
+                        <h5>Call us</h5>
+                        <p>+2547xxxxxxx</p>
+                        <p>Monday to Friday, 8 AM - 6 PM Est</p>
                     </div>
 
-                    <div class="discord-about">
-                        <a href="#">
-                            <i class="bi bi-discord"></i>
-                        </a>
+                </div>
+
+                <div id="wrappedSocial">
+                    <div id="socialKid1">
+                        <i class="fa-brands fa-connectdevelop"></i>
                     </div>
 
-                    <div class="linkedin-about">
-                        <a href="#">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                    </div>
-
-                    <div class="telegram-about">
-                        <a href="#">
-                            <i class="bi bi-telegram"></i>
-                        </a>
+                    <div id="socialKid2">
+                        <h5>Follow us on</h5>
+                        <div>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-telegram"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                        <p>Follow us for daily updates and tips</p>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="contact-form">
-            <div class="st-contact-div">
-                <div class="username-contact-div">
-                    <label for="username-contact">USERNAME:</label>
-                    <input type="text" id="username-contact" class="username-contact" name="username-contact">
+            <div id="wrappedChild2">
+                <h3>Send us a message</h3>
+                <p>Fill out the form below and our team will respond as soon  as possible</p>
+                <div id="inputs1">
+                    <div id="inputsname">
+                        <label for="username">Username</label>
+                        <input type="text">
+                    </div>
+
+                    <div id="inputsnumber">
+                        <label for="number">Phone number</label>
+                        <input type="tel">
+                    </div>
                 </div>
 
-                <div class="phone-contact-div">
-                    <label for="phone-contact">PHONE:</label>
-                    <input type="tell" id="phone-contact" class="phone-contact" name="phone-contact">
+                <div id="inputs2">
+                    <div id="inputsemail">
+                        <label for="email">Email</label>
+                        <input type="email">
+                    </div>
+
+                    <div id="inputscourse">
+                        <label for="course">Course</label>
+                        <select name="course" id="course">
+                            <option value="fullstack">Fullstack Web development</option>
+                            <option value="backend">Backend Web development</option>
+                            <option value="frontend">Frontend Web development</option>
+                            <option value="python">Python Programming</option>
+                            <option value="scratch">Scratch Programming</option>
+                            <option value="cybersec">Cybersecurity</option>
+                            <option value="cloud">Cloud computing</option>
+                            <option value="data">Data science</option>
+                            <option value="mobile">Mobile app develoment</option>
+                            <option value="game">Game development</option>
+                            <option value="roblox">Roblox</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-
-            <div class="nd-contact-div">
-                <div class="email-contact-div">
-                    <label for="email-contact">EMAIL:</label>
-                    <input type="email" id="email-contact" class="email-contact" name="email-contact">
-                </div>
-
-                <div class="course-contact-div">
-                    <label for="course-contact">COURSE:</label>
-                    <select id="course-contact" class="course-contact" name="course-contact">
-                        <option value="python">python</option>
-                        <option value="web development">web development</option>
-                        <option value="cloud computing">cloud computing</option>
-                        <option value="cyber security">cyber security</option>
-                        <option value="software engineering">software engineering</option>
-                        <option value="python">python</option>
-                        <option value="python">python</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="issue-contact-div">
-                <label for="issue-contact">MESSAGE:</label>
-                <textarea id="issue-contact" class="issue-contact" name="username-contact" placeholder="Type your message here..."></textarea>
-            </div>
-            <button class="sendBtn" id="sendBtn">SEND</button>
         </div>
     </div>
+
 </body>
 </html>
