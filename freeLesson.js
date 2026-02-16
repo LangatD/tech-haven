@@ -11,6 +11,7 @@ const courseSelect = document.getElementById('course');
 const datetimeInput = document.getElementById('datetime');
 //const bookButton = document.getElementById('book-btn');
 const bookButton = document.querySelector('.freeless-maincont button');
+const messageDiv = document.getElementById("message");
 
 async function bookTrialLesson(e) {
     e.preventDefault();
@@ -71,7 +72,7 @@ async function bookTrialLesson(e) {
         
         if (data.success) {
             
-            alert('Trial lesson booked successfully! We will contact you soon.');
+            messageDiv.textContent='Trial lesson booked successfully! We will contact you soon.';
             
             
             usernameInput.value = '';
@@ -83,10 +84,10 @@ async function bookTrialLesson(e) {
             // Redirect to home page
             setTimeout(() => {
                 window.location.href = 'index.html';
-            }, 2000);
+            }, 20000);
         } else {
             
-            alert(`Error: ${data.error || 'Failed to book lesson. Please try again.'}`);
+            messageDiv= `Error: ${data.error || 'Failed to book lesson. Please try again.'}`;
         }
     } catch (error) {
         console.error('Error:', error);
