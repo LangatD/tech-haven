@@ -3,6 +3,7 @@ body{
     padding: 0;
     background-color: rgba(220, 124, 213, 0.1);
     font-family: 'poppins', sans-serif;
+    overflow: hidden;
 }
 
 #circles{
@@ -23,10 +24,42 @@ body{
 }
 
 #circle1{
-    background-color: rgba(218, 12, 204, .6);
+    background-color: rgba(218, 12, 204, .3);
     width: 400px;
     height: 200px;
-    box-shadow: 5px 5px 10px rgba(218, 12, 204, .6), 0 0 10px rgba(244, 147, 0, 0.888);
+    box-shadow: 5px 5px 10px rgba(218, 12, 204, .3), 0 0 10px rgba(244, 147, 0, 0.888);
+}
+
+#circle2{
+    background-color: rgba(0, 78, 137, .6);
+    width: 200px;
+    aspect-ratio: 1;
+    top: 0;
+    left: 94vw;
+}
+
+#circle3{
+    background-color: rgba(244, 147, 0, 0.288);
+    width: 550px;
+    height: 110px;
+    top: 90px;
+    left: 35vw;
+    animation: breathe 5s infinite ease-in-out;
+}
+
+@keyframes breathe{
+    0%{
+        height: 110px;
+        width: 550px;
+    }
+    50%{
+        height: 120px;
+        width: 560px;
+    }
+    100%{
+        height: 110px;
+        width: 550px;
+    }
 }
 
 
@@ -93,6 +126,8 @@ body{
     flex-direction: row;
     margin-inline: 10%;
     gap: 5%;
+    height: 65vh;
+    width: 75%;
     #wrappedChild1{
         display: flex;
         flex-direction: column;
@@ -209,20 +244,130 @@ body{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
+                justify-content: center;
                 h5{
                     font-size: 1.2rem;
-                    transform: translateY(30px);
+                    margin-top: 3.5rem;
                 }
-                p:nth-of-type(1){
-                    transform: translate(-50px, -10px);
-                    color: rgba(0, 78, 137, 1);
+                #icons{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    padding: 0;
+                    margin: 0;
                 }
-                p:nth-of-type(2){
+                i{
+                    font-size: 1.2rem;
+                }
+                p{
+                    flex-wrap: nowrap;
                     text-wrap: nowrap;
-                    transform: translate(-50px, -30px);
+                    align-self: flex-start;
+                    margin-top: 3rem;
                     color: rgba(68, 64, 64, .7);
                 }
             }
         }
+    }
+}
+
+#wrappedChild2{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 2%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(220, 124, 213, 0.3);
+    width: 100%;
+    h3{
+        font-size: 2.2rem;
+        align-self: center;
+    }
+    p{
+        width: 80%;
+    }
+    #inputs1{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        #inputsname{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+            font-size: 1.5rem;
+            input{
+                width: 90%;
+                height: 2rem;
+                background-color: rgba(220, 124, 213, 0.1);
+                border: 1px solid rgba(220, 124, 213, 0.8);
+                border-radius: 10px;
+            }
+        }
+        #inputsnumber{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+            font-size: 1.5rem;
+            input{
+                width: 90%;
+                height: 2rem;
+                background-color: rgba(220, 124, 213, 0.1);
+                border: 1px solid rgba(220, 124, 213, 0.8);
+                border-radius: 10px;
+            }
+        }
+    }
+    #inputs2{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 1.5rem;
+        #inputsemail{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+            font-size: 1.5rem;
+            input{
+                width: 90%;
+                height: 2rem;
+                background-color: rgba(220, 124, 213, 0.1);
+                border: 1px solid rgba(220, 124, 213, 0.8);
+                border-radius: 10px;
+            }
+        }
+        #inputscourse{
+            display: flex;
+            flex-direction: column;
+            font-size: 1.5rem;
+            gap: 10px;
+            select{
+                width: 90%;
+                height: 1.5rem;
+                padding: 1rem;
+                padding-inline: 1.4rem;
+                border: 1px solid rgba(220, 124, 213, 0.8);
+                background-color: rgba(220, 124, 213, 0.1);
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+#issue{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    gap: 10px;
+    #the-issue{
+        height: 100%;
+        background-color: rgba(220, 124, 213, 0.1);
+        border: 1px solid rgba(220, 124, 213, 0.8);
+        border-radius: 10px;
+        min-height: 8rem;
+        padding: 10px;
     }
 }
