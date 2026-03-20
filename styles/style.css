@@ -149,7 +149,7 @@ body{
     width: 30%;
     height: 30%;
     margin-top: 30px;
-    clip-path: polygon(50% 0%, 80% 10%, 100% 48%, 100% 76%, 83% 96%, 50% 100%, 18% 96%, 0 80%, 0 43%, 20% 10%);
+    /*clip-path: polygon(50% 0%, 80% 10%, 100% 48%, 100% 76%, 83% 96%, 50% 100%, 18% 96%, 0 80%, 0 43%, 20% 10%)*/;
 }
 
 .freeless-btn1{
@@ -380,13 +380,98 @@ body{
     justify-content: center;
     align-items: center;
     background-color: rgba(151, 84, 172, 0.1);
-    gap: 20px;
     h2{
         font-size: 40px;
     }
 }
 
 .reason-1{
+    background-color: rgba(255, 255, 255, .8);
+    /*border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*background-color: red;*/
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    padding: 10px;
+    font-size: 25px;
+    /*background-color:  rgba(124, 12, 189, .3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);*/
+    
+    
+    div{
+        width: 30%;
+        h5{
+            font-size: 30px;
+            padding: 0;
+        }
+        p{
+            font-size: 22px;
+        }
+    }
+}
+
+.reviews-img-1{
+    clip-path: circle(50%);
+    width: 25%;
+    height: 25%;
+    position: relative;
+}
+
+.reviews-img-1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.reason-2{
+    /*border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*background-color: red;*/
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    padding: 30px;
+    font-size: 25px;
+    /*background-color:  rgba(124, 12, 189, .3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);*/
+    img{
+        clip-path: circle(50%);
+        width: 25%;
+        height: 25%;
+    }
+    div{
+        width: 30%;
+        h5{
+            font-size: 30px;
+            padding: 0;
+        }
+        p{
+            font-size: 22px;
+        }
+    }
+}
+
+.reason-3{
     background-color: rgba(255, 255, 255, .8);
     /*border-top-left-radius: 10%;
     border-bottom-left-radius: 10%;*/
@@ -406,65 +491,14 @@ body{
     box-shadow: 0 0 10px rgba(255, 255, 255, 1);*/
     img{
         clip-path: circle(50%);
+        width: 25%;
+        height: 25%;
     }
     div{
         width: 30%;
         h5{
             font-size: 30px;
             padding: 0;
-        }
-        p{
-            font-size: 22px;
-        }
-    }
-}
-
-.reason-2{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap:50px;
-    padding: 25px;
-    font-size: 25px;
-    /*background-color:  rgba(124, 12, 189, .3);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 1);*/
-    img{
-        clip-path: circle(50%);
-    }
-    div{
-        width: 30%;
-        h5{
-            font-size: 30px;
-        }
-        p{
-            font-size: 22px;
-        }
-    }
-}
-
-.reason-3{
-    background-color: rgba(255, 255, 255, .8);
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap:50px;
-    padding: 25px;
-    font-size:25px;
-    /*background-color:  rgba(124, 12, 189, .3);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 1);*/
-    img{
-        clip-path: circle(50%);
-    }
-    div{
-        width: 30%;
-        h5{
-            font-size: 30px;
         }
         p{
             font-size: 22px;
@@ -556,32 +590,32 @@ body{
 }
 
 .why-1{
-    background-color: chocolate;
+    background-color: rgba(210, 105, 30, .7);
     /*h6{
         color: blue;
     }*/
 }
 
 .why-3{
-    background-color: darkgoldenrod;
+    background-color: rgba(184, 134, 11, .7);
 }
 
 .why-2{
-    background-color: blue;
+    background-color: rgba(0, 0, 255, .7);
     /*h6{
         color: chocolate;
     }*/
 }
 
 .why-4{
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, .7);
     /*h6{
         color: rgb(255, 0, 43);
     }*/
 }
 
 .why-5{
-    background-color: rgb(103, 240, 5);
+    background-color: rgba(103, 240, 5, .7);
     align-self: center;
     /*h6{
         color: rgb(53, 91, 160);
@@ -609,8 +643,9 @@ body{
 }
 
 .after-thought{
+    opacity: 0;
     position: absolute;
-    animation: rotateReviews 14s infinite ease-in-out;
+    animation: rotateReviews 21s infinite ease-in-out;
 }
 
 @keyframes rotateReviews {
@@ -621,25 +656,29 @@ body{
         opacity: 1;
         transform: translateX(-30px);
     }
-    40% { 
+    25% { 
         opacity: 1;
         transform: translateX(20px);
      }
-    50% { 
+    40% { 
         opacity: 0;
      }
     100% { opacity: 0; }
 }
 
 .after-thought:nth-child(1){
-    animation-delay: 1s;
+    animation-delay: 0s;
 }
 
 .after-thought:nth-child(2){
     animation-delay: 7s;
 }
 
-.par-reviews{
+.after-thought:nth-child(3){
+    animation-delay: 14s;
+}
+
+.par-reviews, .grand-par-reviews{
     display: flex;
     flex-direction: row;
 }
@@ -657,7 +696,7 @@ body{
     text-align: center;
 }
 
-.rev-1, .rev-2, .rev-3, .rev-4, .rev-5, .rev-6, .rev-7, .rev-8, .rev-9{
+.rev-1, .rev-2, .rev-3, .rev-4, .rev-5, .rev-6, .rev-7, .rev-8, .rev-9, .rev-10, .rev-11, .rev-12{
     display: flex;
     flex-direction: column;
     justify-content: center;
