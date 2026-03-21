@@ -132,3 +132,7 @@ formInputs.forEach(input => {
     window.location = "freeless.html"}
   }); */
 });
+
+const redirect = ()=>{
+    window.location="login.html";
+}

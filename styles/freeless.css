@@ -297,3 +297,123 @@ body{
         font-size: 1.5rem;
     }
 }
+
+@media (max-width: 1620px){
+    #freeless-content{
+        #freeless-atract{
+            #rise-jonas-blue{
+                width: 100%;
+                gap: 20px;
+                /*#rise1{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 20px;
+                    gap: 0;
+                    #rise1-1{
+                        transform: translateY(-30px);
+                    }
+                }*/
+            }
+        }
+    }
+}
+
+@media (max-width: 1550px){
+    #freeless-maincont{
+        #bellow-h2{
+            text-align: center;
+        }
+        #username-freeless{
+            width: 80%;
+        }
+        #number-freeless{
+            width: 80%;
+        }
+        #email-freeless{
+            width: 80%;
+        }
+        #course-freeless{
+            width: 80%;
+        }
+        #prof-level{
+            width: 80%;
+        }
+        #date-time{
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 1180px){
+    #freeless-content{
+        #freeless-atract{
+            h3{
+                font-size: 2.2rem;
+            }
+            #rise-jonas-blue{
+                #rise1{
+                    display: flex;
+                    flex-direction: column;
+                    transform: translateY(60px);
+                    gap: 0;
+                    .fa-graduation-cap{
+                        transform: translateX(-20px);
+                    }
+                    #rise1-1{
+                        transform: translateY(-85px);
+                    }
+                }
+                #rise2{
+                    display: flex;
+                    flex-direction: column;
+                    transform: translateY(60px);
+                    gap: 0;
+                    .fa-star{
+                        transform: translateX(-20px);
+                    }
+                    #rise2-2{
+                        transform: translateY(-85px);
+                    }
+                }
+                #rise3{
+                    display: flex;
+                    flex-direction: column;
+                    transform: translateY(60px);
+                    gap: 0;
+                    .fa-earth-americas{
+                        transform: translateX(-20px);
+                    }
+                    #rise3-3{
+                        transform: translateY(-85px);
+                    }
+                }
+            }
+        }
+        #freeless-maincont{
+            h2{
+                text-align: center;
+                font-size: 2.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 890px){
+    #freeless-content{
+        display: flex;
+        flex-direction: column-reverse;
+        #freeless-atract{
+            width: 80%;
+            #rise-jonas-blue{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        #freeless-maincont{
+            width: 80%;
+        }
+    }
+}
