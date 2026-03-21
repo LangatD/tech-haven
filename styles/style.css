@@ -398,7 +398,7 @@ body{
     height: 30%;
     display: flex;
     flex-direction: row;
-    gap:50px;
+    gap:15%;
     padding: 10px;
     font-size: 25px;
     /*background-color:  rgba(124, 12, 189, .3);
@@ -408,33 +408,49 @@ body{
     
     div{
         width: 30%;
+        background-color: rgba(0, 0, 255, .4);
+        border-top-right-radius: 30%;
+        border-bottom-right-radius: 30%;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 30%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         h5{
             font-size: 30px;
             padding: 0;
         }
         p{
             font-size: 22px;
+            transform: translateY(-30px);
         }
     }
 }
 
-.reviews-img-1{
-    clip-path: circle(50%);
-    width: 25%;
-    height: 25%;
-    position: relative;
+#only-sec1{
+    background-color: rgba(0, 0, 255, .4);
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.reviews-img-1::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30%;
-    height: 30%;
-    border-radius: 50%;
-    background-color: red;
+#sec-div1{
+    width: 270px;
+    height: 270px;
+
+    background-image: url(../assets/tech-haven/Image1.png);
+    background-position: center;
+    background-size: cover;
+
+    clip-path: circle(50%);
 }
+
 
 .reason-2{
     /*border-top-left-radius: 10%;
@@ -448,7 +464,7 @@ body{
     height: 25%;
     display: flex;
     flex-direction: row;
-    gap:50px;
+    gap:15%;
     padding: 30px;
     font-size: 25px;
     /*background-color:  rgba(124, 12, 189, .3);
@@ -461,14 +477,47 @@ body{
     }
     div{
         width: 30%;
+        background-color: rgba(164, 4, 212, 0.4);
+        border-top-right-radius: 30%;
+        border-bottom-right-radius: 30%;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 30%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         h5{
             font-size: 30px;
             padding: 0;
         }
         p{
             font-size: 22px;
+            transform: translateY(-30px);
         }
     }
+}
+
+#only-sec2{
+    background-color: rgba(164, 4, 212, 0.4);
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec-div2{
+    width: 270px;
+    height: 270px;
+
+    background-image: url(../assets/tech-haven/Image8.png);
+    background-position: center;
+    background-size: cover;
+
+    clip-path: circle(50%);
 }
 
 .reason-3{
@@ -483,7 +532,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap:50px;
+    gap:15%;
     padding: 10px;
     font-size: 25px;
     /*background-color:  rgba(124, 12, 189, .3);
@@ -496,14 +545,47 @@ body{
     }
     div{
         width: 30%;
+        background-color: rgba(4, 212, 115, 0.4);
+        border-top-right-radius: 30%;
+        border-bottom-right-radius: 30%;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 30%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         h5{
             font-size: 30px;
             padding: 0;
         }
         p{
             font-size: 22px;
+            transform: translateY(-30px);
         }
     }
+}
+
+#only-sec3{
+    background-color: rgba(4, 212, 115, 0.4);
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec-div3{
+    width: 270px;
+    height: 270px;
+
+    background-image: url(../assets/tech-haven/Image5.png);
+    background-position: center;
+    background-size: cover;
+
+    clip-path: circle(50%);
 }
 
 .reason-4{
@@ -512,7 +594,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:50px;
+    gap:15%;
     padding: 25px;
     font-size: 25px;
     /*background-color:  rgba(124, 12, 189, .3);
@@ -523,13 +605,47 @@ body{
     }
     div{
         width: 30%;
+        background-color: rgba(181, 212, 4, .4);
+        border-top-right-radius: 30%;
+        border-bottom-right-radius: 30%;
+        border-top-left-radius: 30%;
+        border-bottom-left-radius: 30%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         h5{
             font-size: 30px;
+            padding: 0;
         }
         p{
             font-size: 22px;
+            transform: translateY(-30px);
         }
     }
+}
+
+#only-sec4{
+    background-color: rgba(181, 212, 4, 0.4);
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec-div4{
+    width: 270px;
+    height: 270px;
+
+    background-image: url(../assets/tech-haven/Image6.png);
+    background-position: center;
+    background-size: cover;
+
+    clip-path: circle(50%);
 }
 
 .whys{
