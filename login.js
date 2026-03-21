@@ -6,6 +6,7 @@ const form = document.querySelector(".signIn-form");
 const userError = document.querySelector("#user-errormessage");
 const passError = document.querySelector("#pass-errormessage");
 const API_URL = 'https://tech-haven-backend.onrender.com';
+const headbtn = document.querySelector(".freeless-btn");
 if(form){
     form.addEventListener("submit",async function(e){
         e.preventDefault();
@@ -134,4 +135,10 @@ if(passCheck){
     })
 }
     })
+};
+
+if(headbtn){
+    headbtn.onclick=()=>{
+        document.location="freeless.html"
+    }
 }

@@ -160,3 +160,44 @@ form::before{
   height: 30px;
   width: 100%;
 }
+
+/*i'm making the webpage responsive*/
+@media (max-width: 1130px){
+  .login{
+    .left-login{
+      h4{
+        text-align: center;
+      }
+    }
+    form{
+      .child{
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 760px){
+  body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .left-login{
+      height: 50%;
+      width: 90%;
+      padding-top: 5%;
+    }
+    form{
+      width: 110%;
+      .child{
+        width: 60%;
+      }
+    }
+  }
+}
