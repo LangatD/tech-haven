@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/contact.css">
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,11 +29,15 @@
 
     <div id="wrapper">
         <h2>We're here to help</h2>
-        <p>Have a question or facing an issue? Our dedcated support team are here to help. Fill out the form below and we'll get back to you within 5 hours.</p>
+        <p id="wrapper-p">Have a question or facing an issue? Our dedcated support team are here to help. Fill out the form below and we'll get back to you within 5 hours.</p>
 
         <div id="wrappedBigKid">
             <div id="wrappedChild1">
-                <h4>Get in Touch</h4>
+                <div id="w-dropdown">
+                    <h4>Get in Touch</h4>
+
+                    <!--<i class="bx bx-chevron-down" />-->
+                </div>
                 <div id="wrappedEmail">
                     <div id="emailKid1">
                         <!--<i class="fa-solid fa-at"></i>-->
@@ -121,6 +126,9 @@
                     <label for="the-issue">Describe your issue</label>
                     <textarea name="the-issue" id="the-issue" placeholder="Type your issue here..."></textarea>
                 </div>
+                <button id="latenight-thought">
+                    SUBMIT
+                </button>
             </div>  
         </div>
     
