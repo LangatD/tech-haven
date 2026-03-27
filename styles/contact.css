@@ -590,10 +590,13 @@ body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 0;
             #call-sec1{
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                margin: 0;
+                padding: 0;
                 gap: 0;
                 i{
                     color: rgb(4, 47, 241);
@@ -602,6 +605,9 @@ body{
                 p{
                     font-size: 1.5rem;
                 }
+            }
+            #call-sec2{
+                transform: translateY(-10px);
             }
         }
 
@@ -614,7 +620,9 @@ body{
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                gap: 10px;
+                gap: 0px;
+                margin: 0;
+                padding: 0;
                 i{
                     color: rgb(4, 47, 241);
                     font-size: 1.5rem;
@@ -623,6 +631,9 @@ body{
                     font-size: 1.5rem;
                 }
             }
+            #email-sec2{
+                transform: translateY(-10px);
+            }
         }
 
         #follow{
@@ -630,6 +641,7 @@ body{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            margin-bottom: 30px;
             #follow-sec1{
                 font-size: 1.5rem;
             }
@@ -638,8 +650,28 @@ body{
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                gap: 10px;
-                font-size: 1rem;
+                gap: 15px;
+                font-size: 1.2rem;
+                i:nth-of-type(1){
+                    color: rgba(0, 78, 137, 1);
+                }
+                i:nth-of-type(2){
+                    background: linear-gradient(to bottom, rgb(4, 12, 252), rgb(241, 9, 9));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                i:nth-of-type(3){
+                    color: rgb(78, 160, 222);
+                }
+                i:nth-of-type(4){
+                    color: rgb(57, 7, 255);
+                }
+                i:nth-of-type(5){
+                    color: rgb(0, 0, 0);
+                }
+                i:nth-of-type(6){
+                    color: rgb(0, 0, 0);
+                }
             }
         }
     }
@@ -650,7 +682,8 @@ body{
             display: none;
         }
         #wrappedChild2{
-            padding-inline: 5%;
+            padding-inline: 2%;
+            width: 100%;
             margin-top: 30px;
             #inputs1{
                 display: flex;
@@ -695,7 +728,7 @@ body{
             animation: none;
             border-radius: 0%;
             top: -30vh;
-            left: -135vw;
+            left: -150vw;
             width: 900px;
             height: 900px;
             transform: skew(-45deg);
@@ -705,11 +738,16 @@ body{
 
     #contact-logo{
         a{
+            img{
+                width: 3rem;
+            }
             p{
                 font-size: 1.2rem;
             }
             button{
-                padding: 5px;
+                height: 1.5rem;
+                padding: 0;
+                font-size: 1rem;
             }
         }
     }
