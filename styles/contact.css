@@ -113,6 +113,10 @@ body{
     }
 }
 
+.support{
+    display: none;
+}
+
 #wrapper{
     display: flex;
     flex-direction: column;
@@ -543,13 +547,100 @@ body{
 }
 
 @media (max-width: 750px){
-    #circle3{
-        display: none;
+    #circles{
+        #circle3{
+            animation: none;
+            border-radius: 0%;
+            top: -30vh;
+            left: -100vw;
+            width: 900px;
+            height: 900px;
+            transform: skew(-45deg);
+            background-color: rgba(218, 12, 204, .2);
+        }
     }
 
     #contact-logo{
         button{
             font-size: 1rem;
+        }
+    }
+
+    .support{
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center;   
+        padding-left: 30px;
+        h3{
+            width: auto;
+            font-size: 2rem;
+            background: linear-gradient(25deg, rgba(0, 0, 0, 1), rgb(3, 21, 122), rgb(174, 1, 248));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transform: translateY(10px);
+            padding: 0;
+            padding-top:20px;
+            margin: 0;
+        }
+
+        #call{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            #call-sec1{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 0;
+                i{
+                    color: rgb(4, 47, 241);
+                    font-size: 1.5rem;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        #email{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            #email-sec1{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                i{
+                    color: rgb(4, 47, 241);
+                    font-size: 1.5rem;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        #follow{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            #follow-sec1{
+                font-size: 1.5rem;
+            }
+            #follow-sec2{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                font-size: 1rem;
+            }
         }
     }
 
@@ -560,6 +651,7 @@ body{
         }
         #wrappedChild2{
             padding-inline: 5%;
+            margin-top: 30px;
             #inputs1{
                 display: flex;
                 flex-direction: column;
@@ -592,6 +684,32 @@ body{
                         width: 180%;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 490px){
+    #circles{
+        #circle3{
+            animation: none;
+            border-radius: 0%;
+            top: -30vh;
+            left: -135vw;
+            width: 900px;
+            height: 900px;
+            transform: skew(-45deg);
+            background-color: rgba(218, 12, 204, .2);
+        }
+    }
+
+    #contact-logo{
+        a{
+            p{
+                font-size: 1.2rem;
+            }
+            button{
+                padding: 5px;
             }
         }
     }
