@@ -760,4 +760,54 @@ body{
             }
         }
     }
+
+    #wrapper{
+        h2{
+            display: none;
+        }
+        #wrappedChild2{
+            h3{
+                font-size: 1.8rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+            #inputs1{
+                transform: translateY(-20px);
+                #inputsname{
+                    font-size: 1rem;
+                    input{
+                        height: 1.3rem;
+                        border-radius: 0%;
+                    }
+                }
+                #inputsnumber{
+                    font-size: 1rem;
+                    input{
+                        height: 1.3rem;
+                        border-radius: 0%;
+                    }
+                }
+            }
+
+            #inputs2{
+                transform: translateY(-20px);
+                #inputsemail{
+                    font-size: 1rem;
+                    input{
+                        height: 1.3rem;
+                        border-radius: 0%;
+                    }
+                }
+                #inputscourse{
+                    font-size: 1rem;
+                    select{
+                        height: 1.3rem;
+                        border-radius: 0%;
+                        padding: 2px;
+                    }
+                }
+            }
+        }
+    }
 }
