@@ -201,3 +201,55 @@ form::before{
     }
   }
 }
+
+@media (max-width: 580px){
+  .heading{
+    a{
+      img{
+        width: 3rem;
+      }
+      p{
+        font-size: 1.4rem;
+      }
+    }
+    button{
+      display: none;
+    }
+    .bx-menu-closer{
+      display: flex;
+      font-size: 2rem;
+      color: rgba(50, 48, 48, 0.963);
+      margin-right: 20px;
+    }
+  }
+  .login{
+    .signIn-form{
+      height: max-content;
+      .child{
+        width: 90%;
+        margin-inline: 3%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        h5{
+          font-size: 2rem;
+          font-family: "Arial Black", sans-serif;
+          color: rgba(255, 255, 255, 1);
+          -webkit-text-stroke: 2px rgb(129, 35, 118);
+        }
+        .em-div{
+          input{
+            height: 1.6rem;
+          }
+        }
+        .pass-div{
+          input{
+            height: 1.6rem;
+          }
+        }
+      }
+    }
+    #kidgpt-review{
+      font-size: 1rem;
+    }
+  }
+}
