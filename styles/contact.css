@@ -728,11 +728,20 @@ body{
             animation: none;
             border-radius: 0%;
             top: -30vh;
-            left: -150vw;
+            left: -180vw;
             width: 900px;
             height: 900px;
             transform: skew(-45deg);
             background-color: rgba(218, 12, 204, .2);
+        }
+        #circle4{
+            background-color: rgba(167, 10, 172, 0.58);
+            width: 900px;
+            aspect-ratio: 1;
+            bottom: 0;
+            left: 95vw;
+            border-radius: 0;
+            transform: skew(-45deg);
         }
     }
 
