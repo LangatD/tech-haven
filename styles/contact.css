@@ -111,6 +111,9 @@ body{
         color: rgba(255, 255, 255, 1);
         padding: 15px;
     }
+    i{
+        display: none;
+    }
 }
 
 .support{
@@ -723,6 +726,9 @@ body{
 }
 
 @media (max-width: 490px){
+    body{
+        overflow-x: hidden;
+    }
     #circles{
         #circle3{
             animation: none;
@@ -753,19 +759,28 @@ body{
             p{
                 font-size: 1.2rem;
             }
-            button{
-                height: 1.5rem;
-                padding: 0;
-                font-size: 1rem;
-            }
+        }
+        button{
+            display: none;
+        }
+        i{
+            display: flex;
+            font-size: 1.5rem;
+            color: rgba(100, 100, 100, 0.7);
         }
     }
 
     #wrapper{
+        margin-inline: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         h2{
             display: none;
         }
         #wrappedChild2{
+            margin-inline: 10px;
+            width: 90%;
             h3{
                 font-size: 1.8rem;
             }
@@ -776,6 +791,7 @@ body{
                 transform: translateY(-20px);
                 #inputsname{
                     font-size: 1rem;
+                    color: rgba(100, 100, 100, 0.7);
                     input{
                         height: 1.3rem;
                         border-radius: 0%;
@@ -783,6 +799,7 @@ body{
                 }
                 #inputsnumber{
                     font-size: 1rem;
+                    color: rgba(100, 100, 100, 0.7);
                     input{
                         height: 1.3rem;
                         border-radius: 0%;
@@ -794,6 +811,7 @@ body{
                 transform: translateY(-20px);
                 #inputsemail{
                     font-size: 1rem;
+                    color: rgba(100, 100, 100, 0.7);
                     input{
                         height: 1.3rem;
                         border-radius: 0%;
@@ -801,12 +819,17 @@ body{
                 }
                 #inputscourse{
                     font-size: 1rem;
+                    color: rgba(100, 100, 100, 0.7);
                     select{
                         height: 1.3rem;
                         border-radius: 0%;
                         padding: 2px;
                     }
                 }
+            }
+            #issue{
+                font-size: 1rem;
+                color: rgba(100, 100, 100, 0.7);
             }
         }
     }
