@@ -12,7 +12,7 @@ const datetimeInput = document.getElementById('datetime');
 const bookButton = document.getElementById('book-btn');
 //const bookButton = document.querySelector('.freeless-maincont button');
 const messageDiv = document.getElementById("message");
-
+console.log(bookButton)
 async function bookTrialLesson(e) {
     e.preventDefault();
     
