@@ -9,8 +9,8 @@ const numberInput = document.getElementById('number');
 const emailInput = document.getElementById('email');
 const courseSelect = document.getElementById('course');
 const datetimeInput = document.getElementById('datetime');
-//const bookButton = document.getElementById('book-btn');
-const bookButton = document.querySelector('.freeless-maincont button');
+const bookButton = document.getElementById('book-btn');
+//const bookButton = document.querySelector('.freeless-maincont button');
 const messageDiv = document.getElementById("message");
 
 async function bookTrialLesson(e) {
