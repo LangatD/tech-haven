@@ -6,7 +6,7 @@ const emailInput = document.getElementById("email-contact");
 const phoneInput = document.getElementById("phone-contact");
 const courseSelect = document.getElementById("course-contact");
 const messageInput = document.getElementById("issue-contact");
-const sendBtn = document.getElementById("sendBtn");
+const sendBtn = document.getElementById("latenight-thought");
 const displayMessage= document.getElementById("message-display")
 async function sendMessage(e){
     e.preventDefault()
