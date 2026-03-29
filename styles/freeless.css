@@ -3,8 +3,12 @@ body{
     flex-direction: column;
     margin: 0;
     font-family: Arial, sans-serif;
-    background: radial-gradient(rgba(0, 0, 0, 0.363), rgba(109, 6, 78, 0.438), rgba(125, 4, 136, 0.781), rgba(106, 5, 146, 0.863));
+    background: radial-gradient(rgba(235, 4, 204, 0.445), rgba(109, 6, 78, 0.219), rgba(125, 4, 136, 0.081), rgba(106, 5, 146, 0.263));
     /*background: linear-gradient(250deg, /*rgba(180, 180, 180, .2)white 10%, /*rgba(255, 255, 255, 1) rgba(152, 2, 189, .4) 90%);*/
+}
+
+#square{
+    display: none;
 }
 
 .freeless-head{
@@ -540,8 +544,17 @@ body{
             }
         }
     }
+
+    #square{
+        display: flex;
+    }
+
     body{
-        
+        background: rgba(255, 255, 255, 1);
+    }
+
+    body{
+        background-color: rgba(255, 255, 255, 1);
 
         .freeless-head{
             height: 4rem;
@@ -601,7 +614,7 @@ body{
                 color: rgba(72, 71, 74, 1);
             }
             #date-time{
-                width: 100%;
+                width: 110%;
                 font-size: 1.3rem;
                 color: rgba(72, 71, 74, 1);
             }

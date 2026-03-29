@@ -13,13 +13,13 @@
     <div id="circles">
         <div id="circle1"></div>
         <div id="circle3"></div>
+        <div id="circle6"></div>
     </div>
 
     <div id="circles2">
         <div id="circle2"></div>
         <div id="circle4"></div>
         <div id="circle5"></div>
-        <div id="circle6"></div>
     </div>
 
     <div id="contact-logo">
@@ -27,8 +27,36 @@
             <img src="assets/cnbg.png" alt="tech haven">
             <p>TECH HAVEN</p>
         </a>
-        <button onclick="window.location.href = 'freeless.html'">TRY FREE LESSON</button>
+        <button onclick="window.location.href = 'freeless.html'" id="button1">TRY FREE LESSON</button>
         <i class="bx bx-menu-closer"></i>
+        <i class="bx bx-x" style="display: none;"></i>
+        <div id="dropdown" style="display: none;">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+            <section id="courses-dropdown">
+                <div class="click-drop">
+                    <p>Courses</p>
+                    <i class="bx bx-chevron-down course-dropper"></i>
+                </div>
+                <section id="courses-dropChild" style="display: none;">
+                    <ul>
+                        <li><a href="courses/fullstackwebdev.html">Fullstack Web Development</a></li>
+                        <li><a href="courses/python.html">Python Programming</a></li>
+                        <li><a href="courses/datasci.html">Data Science</a></li>
+                        <li><a href="courses/frontendwebdev.html">Frontend Web Development</a></li>
+                        <li><a href="courses/backendwebdev.html">Backend Web Development</a></li>
+                        <li><a href="courses/mobiledev.html">Mobile App Development</a></li>
+                        <li><a href="courses/scratch.html">Scratch Programming</a></li>
+                        <li><a href="courses/cybersec.html">Cyber Security</a></li>
+                        <li><a href="courses/cloudcomp.html">Cloud Computing</a></li>
+                        <li><a href="courses/gamedev.html">Game Development</a></li>
+                        <li><a href="courses/roblox.html">Roblox</a></li>
+                    </ul>
+                </section>
+            </section>
+            <a href="login.html">Login</a>
+            <button class="freeless-droppedbtn">Try Free Lesson</button>
+        </div>
     </div>
 
     <div class="support">
@@ -174,5 +202,6 @@
         </div>
     
     <script src="contact.js"></script>
+    <script src="dropdown.js"></script>
 </body>
 </html>

@@ -48,6 +48,17 @@ body{
     box-shadow: 5px 5px 10px rgba(218, 12, 204, .3), 0 0 10px rgba(244, 147, 0, 0.888);
 }
 
+#circle6{
+    position: absolute;
+    border-radius: 50%;
+    width: 300px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 1);
+    /*background-color: rgba(141, 3, 146, 0.856);*/
+    top: .8rem;
+    left: 3rem;
+}
+
 #circle2{
     background-color: rgba(0, 78, 137, .2);
     width: 100px;
@@ -490,6 +501,9 @@ body{
         #circle3{
             transform: translate(-60px, -20px);
         }
+        #circle6{
+            display: none;
+        }
     }
     #wrapper{
         padding: 0;
@@ -589,10 +603,92 @@ body{
     }
 
     #contact-logo{
-        button{
+        a{
+            img{
+                width: 3rem;
+            }
+            p{
+                font-size: 1.4rem;
+            }
+        }
+        i{
+            display: flex;
+            font-size: 2rem;
+            color: rgba(100, 100, 100, 0.7);
+        }
+        #button1{
+            display: none;
             font-size: 1rem;
         }
     }
+
+    #dropdown{
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            z-index: 10;
+            top: 4.5rem;
+            right: 0;
+            width: 60vw;
+            background-color: rgba(240, 240, 240, 1);
+            gap: 10px;
+            padding-bottom: 10px;
+            padding-left: 5%;
+            a{
+                color: rgba(72, 71, 74, 1);
+                font-size: 1rem;
+                margin-left: 0;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+            #courses-dropdown{
+                display: flex;
+                flex-direction: column;
+                margin-inline-start: 0;
+                margin-inline-end: 20px;
+                font-size: 1rem;
+                color: rgba(72, 71, 74, 1);
+                .click-drop{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    position: relative;
+                    padding-right: 10px;
+                    cursor: pointer;
+                    i{
+                        font-size: 1.3rem;
+                    }
+                }
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    align-items: start;
+                    margin-left: 0;
+                    padding-left: 10px;
+                    li{
+                        display: flex;
+                        font-size: 1rem;
+                        gap: 10px;
+                        list-style-type: none;
+                        margin-left: 0;
+                        padding-left: 0;
+                        align-items: flex-start;
+                    }
+                }
+            }
+            button{
+                border: none;
+                background-color: rgb(129, 35, 118);
+                color: rgba(255, 255, 255, 1);
+                font-size: 1.4rem;
+                width: 90%;
+                margin-top: 10px;
+                margin-right: 5%;
+                border-radius: 5px;
+            }
+        }
 
     .support{
         display: flex;
@@ -775,8 +871,10 @@ body{
             transform: skew(-45deg);
         }
     }
+    
 
     #contact-logo{
+        height: 4.5rem;
         a{
             img{
                 width: 3rem;
@@ -785,17 +883,10 @@ body{
                 font-size: 1.2rem;
             }
         }
-        button{
-            display: none;
-        }
-        i{
-            display: flex;
-            font-size: 1.5rem;
-            color: rgba(100, 100, 100, 0.7);
-        }
     }
 
     #wrapper{
+        margin-top: 5rem;
         margin-inline: 0;
         display: flex;
         align-items: center;
