@@ -118,7 +118,7 @@ form::before{
   background-position: center;
   background-size: cover;
   /*background-color: rgba(255, 255, 255, 1);*/
-  z-index: 100;
+  z-index: 10;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -220,6 +220,77 @@ form::before{
 }
 
 @media (max-width: 580px){
+  .heading{
+     .bx-menu-closer{
+         display: flex;
+     }
+     #dropdown{
+         display: none;
+         flex-direction: column;
+         position: absolute;
+         z-index: 100;
+         top: 4.4rem;
+         right: 0;
+         width: 60vw;
+         background-color: rgba(240, 240, 240, 1);
+         gap: 10px;
+         padding-bottom: 10px;
+         padding-left: 5%;
+         a{
+             color: rgba(72, 71, 74, 1);
+             font-size: 1rem;
+             margin-left: 0;
+             padding-left: 0;
+             margin-top: 10px;
+         }
+         #courses-dropdown{
+             display: flex;
+             flex-direction: column;
+             margin-inline-start: 0;
+             margin-inline-end: 20px;
+             font-size: 1rem;
+             color: rgba(72, 71, 74, 1);
+             .click-drop{
+                 display: flex;
+                 flex-direction: row;
+                 align-items: center;
+                 justify-content: space-between;
+                 position: relative;
+                 padding-right: 10px;
+                 cursor: pointer;
+                 i{
+                     font-size: 1.3rem;
+                 }
+             }
+             ul{
+                 display: flex;
+                 flex-direction: column;
+                 gap: 10px;
+                 align-items: start;
+                 margin-left: 0;
+                 padding-left: 10px;
+                 li{
+                     display: flex;
+                     font-size: 1rem;
+                     gap: 10px;
+                     list-style-type: none;
+                     margin-left: 0;
+                     padding-left: 0;
+                     align-items: flex-start;
+                 }
+             }
+         }
+         button{
+             border: none;
+             background-color: rgb(129, 35, 118);
+             color: rgba(255, 255, 255, 1);
+             font-size: 1.4rem;
+             width: 90%;
+             margin-right: 5%;
+             border-radius: 5px;
+         }
+     }
+  }
   body{
     overflow-x: hidden;
   }
@@ -232,7 +303,7 @@ form::before{
         font-size: 1.4rem;
       }
     }
-    button{
+    .freeless-btn{
       display: none;
     }
     .bx-menu-closer{
@@ -246,7 +317,7 @@ form::before{
     .signIn-form{
       height: max-content;
       .child{
-        background-image: url(th4.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .6)),url(th4.jpg);
         width: 90%;
         margin-inline: 3%;
         margin-top: 10%;
