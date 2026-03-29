@@ -130,6 +130,9 @@ form::before{
 
 .child h5{
   font-size: 30px;
+  background-color: rgba(255, 255, 255, .7);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, .9);
 }
 
 .em-div{
@@ -148,6 +151,7 @@ form::before{
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: 20px;
 }
 
@@ -155,6 +159,12 @@ form::before{
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+#forgot-pass{
+  background-color: rgba(255, 255, 255, .7);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(247, 232, 252);
 }
 
 .sign-btn{
