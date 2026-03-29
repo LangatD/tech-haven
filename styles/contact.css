@@ -6,7 +6,7 @@ body{
 }
 
 #circles{
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
@@ -22,7 +22,25 @@ body{
     opacity: 0.3;
 }
 
+#circles2{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#circles2 div{
+    /*border-radius: 50%;*/
+    position: absolute;
+    opacity: 0.3;
+}
+
 #circle1{
+    position: absolute;
     border-radius: 50%;
     background-color: rgba(218, 12, 204, .3);
     width: 400px;
@@ -160,7 +178,8 @@ body{
         padding-inline: 5%;
         box-shadow: 0 0 10px rgba(218, 12, 204, .3);
         gap: 10px;
-        height: 70%vh;
+        height: fit-content;
+        padding-bottom: 5%;
         h4{
             font-size: 2rem;
         }
@@ -172,7 +191,9 @@ body{
             background-color: rgba(240, 73, 229, 0.1);
             border-radius: 10px;
             padding-left: 3%;
-            height: 20%;
+            height: 8rem;
+            padding-top: 0;
+            padding-bottom: 0;
             #emailKid1{
                 display: flex;
                 justify-content: center;
@@ -180,7 +201,7 @@ body{
                 background-color: rgba(167, 10, 172, 0.58);
                 font-size: 1.5rem;
                 padding: 15px;
-                height: 60%;
+                height: 20%;
                 border-radius: 10px;
                 color: rgba(255, 255, 255, 1);
             }
@@ -188,6 +209,8 @@ body{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
+                margin-top: 0;
+                padding-top: 0;
                 h5{
                     font-size: 1.2rem;
                     transform: translateY(30px);
@@ -211,7 +234,7 @@ body{
             background-color: rgba(240, 73, 229, 0.1);
             border-radius: 10px;
             padding-left: 3%;
-            height: 20%;
+            height: 8rem;
             #numberKid1{
                 display: flex;
                 justify-content: center;
@@ -219,7 +242,7 @@ body{
                 background-color: rgba(167, 10, 172, 0.58);
                 font-size: 1.5rem;
                 padding: 15px;
-                height: 60%;
+                height: 20%;
                 border-radius: 10px;
                 color: rgba(255, 255, 255, 1);
             }
@@ -250,7 +273,7 @@ body{
             background-color: rgba(240, 73, 229, 0.1);
             border-radius: 10px;
             padding-left: 3%;
-            height: 20%;
+            height: 8rem;
             #socialKid1{
                 display: flex;
                 justify-content: center;
@@ -258,7 +281,7 @@ body{
                 background-color: rgba(167, 10, 172, 0.58);
                 font-size: 1.5rem;
                 padding: 15px;
-                height: 60%;
+                height: 20%;
                 border-radius: 10px;
                 color: rgba(255, 255, 255, 1);
             }
@@ -325,6 +348,8 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(220, 124, 213, 0.8);
     width: 100%;
+    height: max-content;
+    padding-bottom: 2%;
     h3{
         font-size: 2.2rem;
         align-self: center;
@@ -395,12 +420,12 @@ body{
                 justify-content: center;
                 align-items: center;
                 width: 95%;
-                height: 1.5rem;
-                padding: 1rem;
-                padding-inline: 1.4rem;
+                height: 1rem;
+                padding-top: .6rem;
                 border: 1px solid rgba(220, 124, 213, 0.8);
                 background-color: rgba(220, 124, 213, 0.1);
                 border-radius: 10px;
+                padding-bottom: 1.6rem;
             }
         }
     }

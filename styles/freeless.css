@@ -3,6 +3,7 @@ body{
     flex-direction: column;
     margin: 0;
     font-family: Arial, sans-serif;
+    background: radial-gradient(rgba(0, 0, 0, 0.363), rgba(109, 6, 78, 0.438), rgba(125, 4, 136, 0.781), rgba(106, 5, 146, 0.863));
     /*background: linear-gradient(250deg, /*rgba(180, 180, 180, .2)white 10%, /*rgba(255, 255, 255, 1) rgba(152, 2, 189, .4) 90%);*/
 }
 
