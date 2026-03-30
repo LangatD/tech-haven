@@ -13,21 +13,42 @@ body{
     width: 100vw;
 }
 
+main{
+    z-index: 0;
+}
+
 .header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: rgba(255, 255, 255, 1);
     color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 10px 10px rgba(155, 144, 156, 0.066);
     font-size: 20px;
     height: 70px;
+    padding-right: 20px;
     position: fixed;
     width: 100vw;
     z-index: 10;
     top: 0;
     overflow-x: hidden;
+    .bi-list{
+        display: none;
+    }
+    .bi-x-lg{
+        display: none;
+    }
+}
+
+#dropdown-fromC{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    z-index: 100;
+    background-color: red;
 }
 
 .header a{
@@ -41,6 +62,7 @@ body{
     background-color: rgba(151, 84, 172, 0.1);
     margin-left: 0;
     padding-inline: 0;
+    z-index: 0;
 }
 
 .welcome-1stchild .with-i{
@@ -67,20 +89,20 @@ body{
     flex-direction: row;
     gap: 30px;
     margin-right: 10px;
+    float: inline-end;
 }
 
 .st-nav{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 30px;
     margin: 0 auto;
     margin-left: 60px;
-}
-
-.nd-nav i{
-    display: none;
-    font-size: 30px;
+    .dropbtn{
+        transform: translateY(8px);
+    }
 }
 
 .bx-chevron-down{
@@ -118,18 +140,24 @@ body{
 .logo-header{
     display: flex;
     flex-direction: row;
-    margin-left: 20px;
+    margin-left: 10px;
     align-items: center;
     justify-content: center;
     a{
         display: flex;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
         gap: 20px;
-    }
-    img{
-        width: 60px;
-        aspect-ratio: 1;
-        border-radius: 50%;
+        img{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        p{
+            align-self: center;
+            transform: translate(-15px, 8px);
+        }
     }
 }
 
@@ -149,7 +177,7 @@ body{
     width: 30%;
     height: 30%;
     margin-top: 30px;
-    margin-right: 40px
+    margin-right: 40px;
     /*clip-path: polygon(50% 0%, 80% 10%, 100% 48%, 100% 76%, 83% 96%, 50% 100%, 18% 96%, 0 80%, 0 43%, 20% 10%)*/;
 }
 
@@ -436,23 +464,24 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         text-align: center;
+        gap: 2rem;
         h5{
             font-size: 30px;
             padding: 0;
+            margin-top: 10px;
         }
         p{
             font-size: 22px;
-            transform: translateY(-30px);
         }
     }
 }
 
 #only-sec1{
     background-color: rgba(0, 0, 255, .4);
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -502,26 +531,28 @@ body{
         border-top-left-radius: 30%;
         border-bottom-left-radius: 30%;
         padding: 10px;
+        padding-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
+        gap: 2rem;
         h5{
             font-size: 30px;
             padding: 0;
+            margin-top: 10px;
         }
         p{
             font-size: 22px;
-            transform: translateY(-30px);
         }
     }
 }
 
 #only-sec2{
     background-color: rgba(164, 4, 212, 0.4);
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -575,21 +606,21 @@ body{
         align-items: center;
         justify-content: center;
         text-align: center;
+        gap: 2rem;
         h5{
             font-size: 30px;
             padding: 0;
         }
         p{
             font-size: 22px;
-            transform: translateY(-30px);
         }
     }
 }
 
 #only-sec3{
     background-color: rgba(4, 212, 115, 0.4);
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -630,26 +661,28 @@ body{
         border-top-left-radius: 30%;
         border-bottom-left-radius: 30%;
         padding: 10px;
+        padding-top: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
+        gap: 2rem;
         h5{
             font-size: 30px;
             padding: 0;
+            margin-top: 10px;
         }
         p{
             font-size: 22px;
-            transform: translateY(-30px);
         }
     }
 }
 
 #only-sec4{
     background-color: rgba(181, 212, 4, 0.4);
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -797,10 +830,10 @@ body{
     23% { 
         opacity: 1;
         /*transform: translateX(20px);*/
-     }
+    }
     38% { 
         opacity: 0;
-     }
+    }
     100% { opacity: 0; }
 }
 
@@ -1271,6 +1304,56 @@ body{
     }
 }
 
+@media (max-width: 1260px){
+    main{
+        .reason{
+            .reason-1{
+                div{
+                    width: 50%;
+                }
+            }
+            .reason-2{
+                div{
+                    width: 50%;
+                }
+            }
+            .reason-3{
+                div{
+                    width: 50%;
+                }
+            }
+            .reason-4{
+                div{
+                    width: 50%;
+                }
+            }
+        }
+        .why-us{
+            .codebase{
+                .why-5{
+                    width: 110%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1160px){
+    main{
+        .kids-reviews-parent{
+            height: 50rem;
+            .after-thought{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                div{
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 1125px){
     header{
         .header{
@@ -1327,6 +1410,9 @@ body{
 @media (max-width: 1000px){
     header{
         .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
             .st-nav{
                 display: none;
             }
@@ -1335,6 +1421,52 @@ body{
             }
             .bx-menu-close{
                 display: flex;
+            }
+            .bi-list{
+                display: flex;
+                font-size: 1.8rem;
+                color: rgba(100, 100, 100, .3);
+            }
+        }
+    }
+
+    main{
+        .welcome{
+            .trusted{
+                display: none;
+            }
+        }
+
+        .reason{
+            .reason-1{
+                div{
+                    padding: 20px;
+                    width: 55%;
+                }
+            }
+        }
+        .reason{
+            .reason-2{
+                div{
+                    padding: 20px;
+                    width: 55%;
+                }
+            }
+        }
+        .reason{
+            .reason-3{
+                div{
+                    padding: 20px;
+                    width: 50%;
+                }
+            }
+        }
+        .reason{
+            .reason-4{
+                div{
+                    padding: 20px;
+                    width: 50%;
+                }
             }
         }
     }
@@ -1350,11 +1482,15 @@ body{
 
         .kids-reviews-parent{
             padding-bottom: 20rem;
+            height: 55rem;
             .after-thought{
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                gap: 20px;
+                justify-content: center;
+                height: 30rem;
+                padding-bottom: 20px;
+                gap: 10px;
                 .rev-1, .rev-2, .rev-3, .rev-4{
                     width: 300px;
                 }
@@ -1392,8 +1528,11 @@ body{
             .codebase{
                 display: flex;
                 flex-direction: column;
+                .why-4{
+                    width: 100%;
+                }
                 .why-5{
-                    width: 90%;
+                    width: 100%;
                 }
             }
         }
@@ -1406,13 +1545,15 @@ body{
             }
             .after-thought{
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
+                flex-wrap: wrap;
                 gap: 20px;
                 justify-content: center;
                 align-items: center;
                 margin-top: 40px;
                 div{
                     margin: 0;
+                    width: 300px;
                 }
             }
         }
@@ -1420,6 +1561,13 @@ body{
 }
 
 @media (max-width: 660px){
+    main{
+        .kids-reviews-parent{
+            padding-bottom: 5rem;
+            height: 50rem;
+        }
+    }
+
     .reason{
         padding-inline: 0;
         .reason-1{
@@ -1564,6 +1712,14 @@ body{
                     width: 80%;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 635px){
+    main{
+        .kids-reviews-parent{
+            height: 90rem;
         }
     }
 }
