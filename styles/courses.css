@@ -714,3 +714,80 @@ footer{
         }
     }
 }
+
+@media (max-width: 700px){
+    .main{
+        .header{
+            img{
+                width: 50px;
+            }
+            p{
+                font-size: 1.6rem;
+            }
+            button{
+                font-size: 1rem;
+                padding: .4rem;
+            }
+        }
+
+        .content{
+            .content1{
+                .content1-left{
+                    .content1-left-top{
+                        h1{
+                            font-size: 1.8rem;
+                        }
+                        p{
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    .content1-left-bottom{
+                        .bottom-p{
+                            i{
+                                font-size: 1.2rem;
+                            }
+                            p{
+                                padding: 0;
+                                margin: 5px;
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+
+                .content1-right{
+                    button{
+                        width: 90%;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            .content2-parent{
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                .content2{
+                    margin: 0;
+                    padding: 0;
+                    .content2-row1-1{
+                        padding: 0;
+                        margin: 0;
+                    }
+                }
+
+                .content2-sec-child{
+                    width: 80%;
+                }
+            }
+        }
+
+        .content3{
+            gap: 1.4rem;
+            div{
+                width: 80%;
+            }
+        }
+    }
+}
