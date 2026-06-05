@@ -228,11 +228,44 @@ header{
     margin-top: 60px;
     margin-inline: 20px;
     padding: 20px;
+    padding-top: 60px;
 }
 
 .par-welcome{
     font-size: 35px;
+    animation: slideUp .5s linear forwards;
 }
+
+@keyframes slideUp{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.with-i1{
+    animation: slideUp .5s .1s linear backwards;
+}
+
+.with-i2{
+    animation: slideUp .5s .2s linear backwards;
+}
+
+.with-i3{
+    animation: slideUp .5s .3s linear backwards;
+}
+
+.with-i4{
+    animation: slideUp .5s .4s linear backwards;
+}
+
+.with-i5{
+    animation: slideUp .5s .5s linear backwards;
+}
+
 
 .stud-img{
     width: 30%;
@@ -253,7 +286,7 @@ header{
     height: 50px;
 }
 
-.trusted{
+/*.trusted{
     font-size: 50px;
     white-space: nowrap;
     overflow: hidden;
@@ -261,9 +294,9 @@ header{
     width: 40px;
     animation-delay: 1s;
     animation: typing 20s steps(60) infinite alternate, blink 1s step-end infinite;
-}
+}*/
 
-@keyframes typing {
+/*@keyframes typing {
     0% { width: 0; }
     60% { width: 75%; }
     80% { width: 75%;}
@@ -272,7 +305,7 @@ header{
 
 @keyframes blink {
     50% { border-color: transparent; }
-}
+}*/
 
 .course-img{
     width: 100%;
@@ -300,6 +333,12 @@ header{
     padding-inline: 2%;
     padding-bottom: 2%;
 }*/
+
+.trusted{
+    font-family: "Permanent Marker", cursive;
+    font-size: 20rem;
+    font-weight: 400;
+}
 
 .courses{
     display: flex;
