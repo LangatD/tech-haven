@@ -771,9 +771,78 @@ footer{
                 .content2{
                     margin: 0;
                     padding: 0;
+                    h2{
+                        font-size: 1.2rem;
+                        width: 100%;
+                    }
                     .content2-row1-1{
                         padding: 0;
                         margin: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .content2-row1-main{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            padding-inline: 10px;
+                            width: 100%;
+
+                        }
+
+                        .content2-row2-main{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            padding-inline: 10px;
+                            width: 100%;
+                        }
+                    }
+                    .content2-row2-2{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .content2-row3-main{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            padding-inline: 10px;
+                        }
+
+                        .content2-row4-main{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            padding-inline: 10px;
+                        }
+                    }
+                    .content2-row3-3{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .content2-row5-main{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            padding-inline: 10px;
+                        }
+
+                        .content2-row6-main{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            padding-inline: 10px;
+                        }
                     }
                 }
 
